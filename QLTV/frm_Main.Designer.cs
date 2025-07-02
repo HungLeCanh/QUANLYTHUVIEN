@@ -101,7 +101,7 @@
             this.tạoPhiếuMượnToolStripMenuItem,
             this.danhSáchPhiếuMượnToolStripMenuItem});
             this.phiếuMượnToolStripMenuItem.Name = "phiếuMượnToolStripMenuItem";
-            this.phiếuMượnToolStripMenuItem.Size = new System.Drawing.Size(132, 32);
+            this.phiếuMượnToolStripMenuItem.Size = new System.Drawing.Size(143, 32);
             this.phiếuMượnToolStripMenuItem.Text = "Phiếu Mượn";
             // 
             // tạoPhiếuMượnToolStripMenuItem
@@ -109,6 +109,7 @@
             this.tạoPhiếuMượnToolStripMenuItem.Name = "tạoPhiếuMượnToolStripMenuItem";
             this.tạoPhiếuMượnToolStripMenuItem.Size = new System.Drawing.Size(298, 32);
             this.tạoPhiếuMượnToolStripMenuItem.Text = "Tạo Phiếu Mượn";
+            this.tạoPhiếuMượnToolStripMenuItem.Click += new System.EventHandler(this.tạoPhiếuMượnToolStripMenuItem_Click);
             // 
             // danhSáchPhiếuMượnToolStripMenuItem
             // 

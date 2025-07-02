@@ -71,5 +71,14 @@ namespace QLTV
                 OpenForm(new frm_TrangChu());
             }
         }
+
+        private void tạoPhiếuMượnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // mở form tạo phiếu mượn, có kiểm tra xem form đã mở hay chưa
+            if (Application.OpenForms["frm_TaoPhieuMuon"] == null)
+            {
+                OpenForm(new frm_TaoPhieuMuon());
+            }
+        }
     }
 }
