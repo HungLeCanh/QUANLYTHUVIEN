@@ -36,9 +36,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(282, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 20);
+            this.label1.Size = new System.Drawing.Size(236, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Đây là form thêm mới độc giả";
+            this.label1.Text = " Thịnh chỉnh sửa form thêm mới độc giả";
             // 
             // frm_ThemDocGia
             // 
