@@ -1,6 +1,6 @@
 ﻿namespace QLTV
 {
-    partial class frm_TrangChu
+    partial class frm_ThemSach
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(466, 210);
+            this.label1.Location = new System.Drawing.Point(343, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 16);
+            this.label1.Size = new System.Drawing.Size(76, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Đây là Trang chủ";
+            this.label1.Text = "Thêm Sách";
             // 
-            // frm_TrangChu
+            // frm_ThemSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1355, 739);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Name = "frm_TrangChu";
-            this.Text = "Trang Chủ";
+            this.Name = "frm_ThemSach";
+            this.Text = "frm_ThemSach";
             this.ResumeLayout(false);
             this.PerformLayout();
 

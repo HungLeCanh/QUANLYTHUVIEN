@@ -80,5 +80,14 @@ namespace QLTV
                 OpenForm(new frm_TaoPhieuMuon());
             }
         }
+
+        private void thêmMớiSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // mở form thêm mới sách, có kiểm tra xem form đã mở hay chưa
+            if (Application.OpenForms["frm_ThemSach"] == null)
+            {
+                OpenForm(new frm_ThemSach());
+            }
+        }
     }
 }
