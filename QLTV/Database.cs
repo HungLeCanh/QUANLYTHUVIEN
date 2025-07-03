@@ -36,14 +36,5 @@ namespace QLTV
                 return cmd.ExecuteNonQuery();
             }
         }
-        public object ExecuteScalar(string query)
-        {
-            using (var conn = GetConnection())
-            {
-                conn.Open();
-                var cmd = new MySqlCommand(query, conn);
-                return cmd.ExecuteScalar();
-            }
-        }
     }
 }

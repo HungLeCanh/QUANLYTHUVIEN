@@ -12,10 +12,8 @@ namespace QLTV
 {
     public partial class frm_ThemDocGia : Form
     {
-        Database db;
         public frm_ThemDocGia()
         {
-            this.db = new Database();
             InitializeComponent();
         }
 
@@ -27,6 +25,7 @@ namespace QLTV
             string diaChi = txt_DiaChi.Text.Trim();
             string email = txt_Email.Text.Trim();
             string sql = $"INSERT INTO doc_gia (so_dien_thoai, ho_ten, email, dia_chi) VALUES ('{soDienThoai}', '{tenDocGia}', '{email}', '{diaChi}')";
+            Database db = new Database();
             try
             {
                 // Kiểm tra tính hợp lệ của số điện thoại và email
@@ -41,19 +40,6 @@ namespace QLTV
                     MessageBox.Show("Email không hợp lệ. Vui lòng nhập lại.");
                     return;
                 }
-           
-
-
-                // kiểm tra xem số điện thoại đã tồn tại chưa
-                string checkSql = $"SELECT COUNT(*) FROM doc_gia WHERE so_dien_thoai = '{soDienThoai}'";
-                int checkExistSDT  = Convert.ToInt32(db.ExecuteScalar(checkSql));
-                
-                if( checkExistSDT > 0)
-                {
-                    MessageBox.Show("Số điện thoại đã tồn tại.");
-                    return;
-                }
-
                 // Thực hiện thêm độc giả vào cơ sở dữ liệu
                 int rows = db.ExecuteNonQuery(sql);
                 if (rows > 0)
@@ -81,7 +67,5 @@ namespace QLTV
             // Đặt con trỏ về trường Số điện thoại
             txt_SoDienThoai.Focus();
         }
-
-
     }
 }
