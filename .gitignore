@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 QLTV/App.config
+QLTV/database.cs
