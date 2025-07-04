@@ -24,7 +24,7 @@ namespace QLTV
             string soDienThoai = txt_SoDienThoai.Text.Trim();
             string diaChi = txt_DiaChi.Text.Trim();
             string email = txt_Email.Text.Trim();
-            string sql = $"INSERT INTO doc_gia (so_dien_thoai, ho_ten, email, dia_chi) VALUES ('{soDienThoai}', '{tenDocGia}', '{email}', '{diaChi}')";
+            string sql = $"INSERT INTO doc_gia (so_dien_thoai, ho_ten, email, dia_chi) VALUES ('{soDienThoai}', N'{tenDocGia}', '{email}', N'{diaChi}')";
             Database db = new Database();
             try
             {
