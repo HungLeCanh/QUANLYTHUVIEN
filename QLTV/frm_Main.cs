@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -43,7 +44,8 @@ namespace QLTV
         private void frm_Main_Load(object sender, EventArgs e)
         {
             // Mặc định hiển thị form trang chủ khi mở ứng dụng
-            frm_TrangChu trangChuForm = new frm_TrangChu();
+            frm_TrangChu trangChuForm = new frm_TrangChu(panel1.Width, panel1.Height);
+            
             OpenForm(trangChuForm);
         }
 
@@ -70,7 +72,7 @@ namespace QLTV
             // Mở form trang chủ, có kiểm tra xem form đã mở hay chưa
             if (Application.OpenForms["frm_TrangChu"] == null)
             {
-                OpenForm(new frm_TrangChu());
+                OpenForm(new frm_TrangChu(panel1.Width, panel1.Height));
             }
         }
 

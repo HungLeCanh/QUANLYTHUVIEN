@@ -7,7 +7,7 @@ namespace QLTV
 {
     public class Database
     {
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C_sharp\Nhom4_QUANLYTHUVIEN\QLTV\QuanLyThuVien.mdf;Integrated Security = True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\csap\DoAnC\QLTV\QuanLyThuVien.mdf;Integrated Security=True";
 
         public SqlConnection GetConnection()
         {
