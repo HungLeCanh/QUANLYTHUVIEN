@@ -76,10 +76,9 @@ namespace QLTV
 
                 // Tạo câu lệnh SQL UPDATE
                 string sql = $@"UPDATE doc_gia 
-                       SET ho_ten = '{hoTen}', 
+                       SET ho_ten = N'{hoTen}', 
                            email = '{email}', 
-                           dia_chi = '{diaChi}', 
-                           ngay_dang_ky = '{ngayDangKy}' 
+                           dia_chi = N'{diaChi}', 
                        WHERE so_dien_thoai = '{sdt}'";
 
                 // Thực thi câu lệnh
@@ -143,6 +142,31 @@ namespace QLTV
         private void btn_LamMoi_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void dgv_danhSachDocGia_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel_Header_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_Title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_Controls_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_Main_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
