@@ -89,7 +89,7 @@
             this.dgv_danhSachDocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_danhSachDocGia.MultiSelect = false;
             this.dgv_danhSachDocGia.Name = "dgv_danhSachDocGia";
-            this.dgv_danhSachDocGia.ReadOnly = true;
+            this.dgv_danhSachDocGia.ReadOnly = false;
             this.dgv_danhSachDocGia.RowHeadersVisible = false;
             this.dgv_danhSachDocGia.RowHeadersWidth = 62;
             this.dgv_danhSachDocGia.RowTemplate.Height = 35;
@@ -103,28 +103,28 @@
             this.col_SDT.HeaderText = "Số Điện thoại";
             this.col_SDT.MinimumWidth = 8;
             this.col_SDT.Name = "col_SDT";
-            this.col_SDT.ReadOnly = true;
+            this.col_SDT.ReadOnly = false;
             // 
             // col_hoTen
             // 
             this.col_hoTen.HeaderText = "Họ tên";
             this.col_hoTen.MinimumWidth = 8;
             this.col_hoTen.Name = "col_hoTen";
-            this.col_hoTen.ReadOnly = true;
+            this.col_hoTen.ReadOnly = false;
             // 
             // col_email
             // 
             this.col_email.HeaderText = "Email";
             this.col_email.MinimumWidth = 8;
             this.col_email.Name = "col_email";
-            this.col_email.ReadOnly = true;
+            this.col_email.ReadOnly = false;
             // 
             // col_diaChi
             // 
             this.col_diaChi.HeaderText = "Địa chỉ";
             this.col_diaChi.MinimumWidth = 8;
             this.col_diaChi.Name = "col_diaChi";
-            this.col_diaChi.ReadOnly = true;
+            this.col_diaChi.ReadOnly = false;
             // 
             // col_ngayDangKy
             // 

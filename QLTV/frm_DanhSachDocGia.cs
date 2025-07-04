@@ -78,7 +78,7 @@ namespace QLTV
                 string sql = $@"UPDATE doc_gia 
                        SET ho_ten = N'{hoTen}', 
                            email = '{email}', 
-                           dia_chi = N'{diaChi}', 
+                           dia_chi = N'{diaChi}'
                        WHERE so_dien_thoai = '{sdt}'";
 
                 // Thực thi câu lệnh
