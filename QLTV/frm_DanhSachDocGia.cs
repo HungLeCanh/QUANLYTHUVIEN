@@ -52,11 +52,6 @@ namespace QLTV
             col_diaChi.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
-        private void btn_them_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_sua_Click(object sender, EventArgs e)
         {
             // Kiểm tra xem có dòng nào được chọn không

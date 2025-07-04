@@ -34,7 +34,6 @@
             this.col_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_ngayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_them = new System.Windows.Forms.Button();
             this.btn_luu = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_lamMoi = new System.Windows.Forms.Button();
@@ -92,19 +91,9 @@
             this.col_ngayDangKy.Name = "col_ngayDangKy";
             this.col_ngayDangKy.Width = 150;
             // 
-            // btn_them
-            // 
-            this.btn_them.Location = new System.Drawing.Point(111, 387);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(123, 48);
-            this.btn_them.TabIndex = 1;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.UseVisualStyleBackColor = true;
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
-            // 
             // btn_luu
             // 
-            this.btn_luu.Location = new System.Drawing.Point(327, 387);
+            this.btn_luu.Location = new System.Drawing.Point(173, 387);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(123, 48);
             this.btn_luu.TabIndex = 2;
@@ -114,7 +103,7 @@
             // 
             // btn_xoa
             // 
-            this.btn_xoa.Location = new System.Drawing.Point(529, 387);
+            this.btn_xoa.Location = new System.Drawing.Point(396, 387);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(123, 48);
             this.btn_xoa.TabIndex = 3;
@@ -124,7 +113,7 @@
             // 
             // btn_lamMoi
             // 
-            this.btn_lamMoi.Location = new System.Drawing.Point(751, 387);
+            this.btn_lamMoi.Location = new System.Drawing.Point(626, 387);
             this.btn_lamMoi.Name = "btn_lamMoi";
             this.btn_lamMoi.Size = new System.Drawing.Size(123, 48);
             this.btn_lamMoi.TabIndex = 4;
@@ -140,7 +129,6 @@
             this.Controls.Add(this.btn_lamMoi);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_luu);
-            this.Controls.Add(this.btn_them);
             this.Controls.Add(this.dgv_danhSachDocGia);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_DanhSachDocGia";
@@ -158,7 +146,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_email;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_diaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_ngayDangKy;
-        private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Button btn_luu;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_lamMoi;
