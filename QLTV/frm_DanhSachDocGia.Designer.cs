@@ -96,7 +96,7 @@
             this.dgv_danhSachDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_danhSachDocGia.Size = new System.Drawing.Size(1058, 451);
             this.dgv_danhSachDocGia.TabIndex = 5;
-            this.dgv_danhSachDocGia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_danhSachDocGia_CellContentClick);
+      
             // 
             // col_SDT
             // 
@@ -193,7 +193,7 @@
             this.panel_Header.Name = "panel_Header";
             this.panel_Header.Size = new System.Drawing.Size(1098, 80);
             this.panel_Header.TabIndex = 10;
-            this.panel_Header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Header_Paint);
+      
             // 
             // lbl_Title
             // 
@@ -205,7 +205,7 @@
             this.lbl_Title.Size = new System.Drawing.Size(378, 41);
             this.lbl_Title.TabIndex = 0;
             this.lbl_Title.Text = "📚 DANH SÁCH ĐỘC GIẢ";
-            this.lbl_Title.Click += new System.EventHandler(this.lbl_Title_Click);
+         
             // 
             // panel_Controls
             // 
@@ -218,7 +218,7 @@
             this.panel_Controls.Name = "panel_Controls";
             this.panel_Controls.Size = new System.Drawing.Size(1098, 80);
             this.panel_Controls.TabIndex = 11;
-            this.panel_Controls.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Controls_Paint);
+        
             // 
             // panel_Main
             // 
@@ -230,7 +230,7 @@
             this.panel_Main.Padding = new System.Windows.Forms.Padding(20);
             this.panel_Main.Size = new System.Drawing.Size(1098, 491);
             this.panel_Main.TabIndex = 12;
-            this.panel_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Main_Paint);
+          
             // 
             // frm_DanhSachDocGia
             // 

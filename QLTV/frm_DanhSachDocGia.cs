@@ -143,30 +143,5 @@ namespace QLTV
         {
             LoadData();
         }
-
-        private void dgv_danhSachDocGia_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel_Header_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lbl_Title_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel_Controls_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel_Main_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
