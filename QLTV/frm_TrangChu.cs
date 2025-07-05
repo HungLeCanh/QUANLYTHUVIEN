@@ -28,6 +28,22 @@ namespace QLTV
             panel1.Location = new Point(x, y);
 
         }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox8_Click(object sender, EventArgs e)
         {
 
