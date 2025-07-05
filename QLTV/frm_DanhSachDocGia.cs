@@ -52,15 +52,8 @@ namespace QLTV
             col_diaChi.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
-        private void btn_sua_Click(object sender, EventArgs e)
+        private void suaEventWhenCusorEntered()
         {
-            // Kiểm tra xem có dòng nào được chọn không
-            if (dgv_danhSachDocGia.CurrentRow == null || dgv_danhSachDocGia.CurrentRow.Index < 0)
-            {
-                MessageBox.Show("Vui lòng chọn một độc giả để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             try
             {
                 // Lấy dữ liệu từ dòng đang chọn
@@ -103,10 +96,65 @@ namespace QLTV
             }
         }
 
-        private void btn_lamMoi_Click(object sender, EventArgs e)
+        private void suaEventWhenCusorOuted()
         {
-            LoadData();
+        
+            int result = 0;
+            try
+            {
+                for (int i = 0; i < this.dgv_danhSachDocGia.RowCount; i++)
+                {
+
+                    if (this.dgv_danhSachDocGia.Rows[i].Cells["col_SDT"].Value != null)
+                    {
+                        string sdt = dgv_danhSachDocGia.Rows[i].Cells["col_SDT"].Value?.ToString();
+                        string hoTen = dgv_danhSachDocGia.Rows[i].Cells["col_hoTen"].Value?.ToString();
+                        string email = dgv_danhSachDocGia.Rows[i].Cells["col_email"].Value?.ToString();
+                        string diaChi = dgv_danhSachDocGia.Rows[i].Cells["col_diaChi"].Value?.ToString();
+                        // Xử lý ngày đăng ký (đảm bảo định dạng đúng cho MySQL)
+                        object ngayDangKyObj = dgv_danhSachDocGia.Rows[i].Cells["col_ngayDangKy"].Value;
+                        string ngayDangKy = ngayDangKyObj != null ?
+                        Convert.ToDateTime(ngayDangKyObj).ToString("yyyy-MM-dd") :
+                        DateTime.Now.ToString("yyyy-MM-dd");
+                        // Tạo câu lệnh SQL UPDATE
+                        string sql = $@"UPDATE doc_gia 
+                       SET ho_ten = '{hoTen}', 
+                           email = '{email}', 
+                           dia_chi = '{diaChi}', 
+                           ngay_dang_ky = '{ngayDangKy}' 
+                       WHERE so_dien_thoai = '{sdt}'";
+                        result += db.ExecuteNonQuery(sql);
+                    }
+                }
+                if (result > 0)
+                {
+                    MessageBox.Show($"Cập nhật thông tin độc giả thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Tải lại dữ liệu
+                    LoadData();
+                }
+                else
+                {
+                    MessageBox.Show("Không thể cập nhật thông tin độc giả!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
+
+
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+                // sửa một lúc nhiều row được
+                suaEventWhenCusorOuted();
+   
+        }
+                private void btn_lamMoi_Click(object sender, EventArgs e)
+                {
+                    LoadData();
+                }
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
