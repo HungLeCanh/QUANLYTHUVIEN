@@ -116,12 +116,6 @@ namespace QLTV
             }
         }
 
-        // Overload để tương thích với code cũ
-        private string GetTrangThaiText(string trangThai)
-        {
-            return GetTrangThaiText(TrangThaiSachHelper.FromDbString(trangThai));
-        }
-
         private void btn_TimDocGia_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txt_SoDienThoai.Text.Trim()))
