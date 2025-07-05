@@ -98,13 +98,6 @@ namespace QLTV
 
         }
 
-        private void btn_sua_Click(object sender, EventArgs e)
-        {
-            // sửa một lúc nhiều row được
-            suaEventWhenCusorOuted();
-
-        }
-
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             // Kiểm tra xem có dòng nào được chọn không
@@ -146,6 +139,12 @@ namespace QLTV
         private void btn_LamMoi_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void btn_Sua_Click_1(object sender, EventArgs e)
+        {
+            // sửa một lúc nhiều row được
+            suaEventWhenCusorOuted();
         }
     }
 }

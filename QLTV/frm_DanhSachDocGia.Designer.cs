@@ -60,7 +60,7 @@
             this.dgv_danhSachDocGia.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -89,42 +89,36 @@
             this.dgv_danhSachDocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_danhSachDocGia.MultiSelect = false;
             this.dgv_danhSachDocGia.Name = "dgv_danhSachDocGia";
-            this.dgv_danhSachDocGia.ReadOnly = false;
             this.dgv_danhSachDocGia.RowHeadersVisible = false;
             this.dgv_danhSachDocGia.RowHeadersWidth = 62;
             this.dgv_danhSachDocGia.RowTemplate.Height = 35;
             this.dgv_danhSachDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_danhSachDocGia.Size = new System.Drawing.Size(1058, 451);
             this.dgv_danhSachDocGia.TabIndex = 5;
-      
             // 
             // col_SDT
             // 
             this.col_SDT.HeaderText = "Số Điện thoại";
             this.col_SDT.MinimumWidth = 8;
             this.col_SDT.Name = "col_SDT";
-            this.col_SDT.ReadOnly = false;
             // 
             // col_hoTen
             // 
             this.col_hoTen.HeaderText = "Họ tên";
             this.col_hoTen.MinimumWidth = 8;
             this.col_hoTen.Name = "col_hoTen";
-            this.col_hoTen.ReadOnly = false;
             // 
             // col_email
             // 
             this.col_email.HeaderText = "Email";
             this.col_email.MinimumWidth = 8;
             this.col_email.Name = "col_email";
-            this.col_email.ReadOnly = false;
             // 
             // col_diaChi
             // 
             this.col_diaChi.HeaderText = "Địa chỉ";
             this.col_diaChi.MinimumWidth = 8;
             this.col_diaChi.Name = "col_diaChi";
-            this.col_diaChi.ReadOnly = false;
             // 
             // col_ngayDangKy
             // 
@@ -182,7 +176,7 @@
             this.btn_Sua.TabIndex = 7;
             this.btn_Sua.Text = "✏️ Sửa";
             this.btn_Sua.UseVisualStyleBackColor = false;
-            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click_1);
             // 
             // panel_Header
             // 
@@ -193,7 +187,6 @@
             this.panel_Header.Name = "panel_Header";
             this.panel_Header.Size = new System.Drawing.Size(1098, 80);
             this.panel_Header.TabIndex = 10;
-      
             // 
             // lbl_Title
             // 
@@ -202,10 +195,9 @@
             this.lbl_Title.ForeColor = System.Drawing.Color.White;
             this.lbl_Title.Location = new System.Drawing.Point(25, 25);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(378, 41);
+            this.lbl_Title.Size = new System.Drawing.Size(447, 48);
             this.lbl_Title.TabIndex = 0;
             this.lbl_Title.Text = "📚 DANH SÁCH ĐỘC GIẢ";
-         
             // 
             // panel_Controls
             // 
@@ -218,7 +210,6 @@
             this.panel_Controls.Name = "panel_Controls";
             this.panel_Controls.Size = new System.Drawing.Size(1098, 80);
             this.panel_Controls.TabIndex = 11;
-        
             // 
             // panel_Main
             // 
@@ -230,11 +221,10 @@
             this.panel_Main.Padding = new System.Windows.Forms.Padding(20);
             this.panel_Main.Size = new System.Drawing.Size(1098, 491);
             this.panel_Main.TabIndex = 12;
-          
             // 
             // frm_DanhSachDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1098, 651);
