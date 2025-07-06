@@ -80,7 +80,7 @@ namespace QLTV
         // Method để validate đối tượng
         public bool IsValid()
         {
-            return !string.IsNullOrEmpty(tenSach) &&
+            return !string.IsNullOrEmpty(tenSach) && 
                    donGiaMuon >= 0 &&
                    (namXuatBan == null || (namXuatBan >= 1800 && namXuatBan <= DateTime.Now.Year));
         }
