@@ -93,5 +93,16 @@ namespace QLTV
                 OpenForm(new frm_ThemSach());
             }
         }
+
+       
+
+        private void trạngTháiSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Mở form trạng thái sách, có kiểm tra xem form đã mở hay chưa  
+            if (Application.OpenForms["frm_TrangThaiSach"] == null)
+            {
+                OpenForm(new frm_TrangThaiSach());
+            }   
+        }
     }
 }

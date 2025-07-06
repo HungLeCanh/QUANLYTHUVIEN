@@ -158,6 +158,12 @@
     <Compile Include="frm_TrangChu.Designer.cs">
       <DependentUpon>frm_TrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_TrangThaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TrangThaiSach.Designer.cs">
+      <DependentUpon>frm_TrangThaiSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoaDon.cs" />
     <Compile Include="PhieuMuon.cs" />
     <Compile Include="Program.cs" />
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TrangChu.resx">
       <DependentUpon>frm_TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TrangThaiSach.resx">
+      <DependentUpon>frm_TrangThaiSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
