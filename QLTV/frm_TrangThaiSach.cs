@@ -55,7 +55,6 @@ namespace QLTV
             dataGridView1.DataSource = dt;
 
             // Cấu hình để DataGridView tự động co giãn
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             // Cho phép nội dung ô văn bản tự động xuống dòng

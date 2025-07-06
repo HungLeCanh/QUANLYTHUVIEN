@@ -52,6 +52,7 @@ namespace QLTV
             this.txt_NamXuatBan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel_Controls = new System.Windows.Forms.Panel();
             this.col_MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TenTacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +61,6 @@ namespace QLTV
             this.col_NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel_Controls = new System.Windows.Forms.Panel();
             this.panel_Header.SuspendLayout();
             this.panel_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -73,7 +73,7 @@ namespace QLTV
             this.panel_Header.Controls.Add(this.lbl_Title);
             this.panel_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Header.Location = new System.Drawing.Point(0, 0);
-            this.panel_Header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Header.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Header.Name = "panel_Header";
             this.panel_Header.Size = new System.Drawing.Size(1969, 98);
             this.panel_Header.TabIndex = 13;
@@ -143,7 +143,7 @@ namespace QLTV
             this.panel_Main.Controls.Add(this.dataGridView1);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Main.Location = new System.Drawing.Point(0, 0);
-            this.panel_Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Main.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
             this.panel_Main.Size = new System.Drawing.Size(1969, 852);
@@ -163,7 +163,7 @@ namespace QLTV
             "Ngoại ngữ",
             "Y học - Sức khỏe"});
             this.cbb_TheLoai.Location = new System.Drawing.Point(1377, 459);
-            this.cbb_TheLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_TheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_TheLoai.Name = "cbb_TheLoai";
             this.cbb_TheLoai.Size = new System.Drawing.Size(372, 33);
             this.cbb_TheLoai.TabIndex = 26;
@@ -313,18 +313,16 @@ namespace QLTV
             // 
             // dataGridView1
             // 
-            // 
-            // dataGridView1 - Responsive Configuration for Books
-            // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-
-            // Header styling
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -335,8 +333,6 @@ namespace QLTV
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-
-            // Columns configuration
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaSach,
             this.col_TenSach,
@@ -346,28 +342,6 @@ namespace QLTV
             this.col_NamXuatBan,
             this.col_DonGia,
             this.col_TrangThai});
-
-            // Set column fill weights for better responsive behavior
-            this.col_MaSach.FillWeight = 10;         // Mã sách - ngắn
-            this.col_TenSach.FillWeight = 25;        // Tên sách - dài nhất
-            this.col_TenTacGia.FillWeight = 20;      // Tên tác giả - trung bình
-            this.col_TheLoai.FillWeight = 15;        // Thể loại - trung bình
-            this.col_NhaXuatBan.FillWeight = 15;     // Nhà xuất bản - trung bình
-            this.col_NamXuatBan.FillWeight = 8;      // Năm xuất bản - ngắn
-            this.col_DonGia.FillWeight = 12;         // Đơn giá - trung bình
-            this.col_TrangThai.FillWeight = 10;      // Trạng thái - ngắn
-
-            // Set minimum column widths
-            this.col_MaSach.MinimumWidth = 80;
-            this.col_TenSach.MinimumWidth = 200;
-            this.col_TenTacGia.MinimumWidth = 150;
-            this.col_TheLoai.MinimumWidth = 100;
-            this.col_NhaXuatBan.MinimumWidth = 120;
-            this.col_NamXuatBan.MinimumWidth = 70;
-            this.col_DonGia.MinimumWidth = 90;
-            this.col_TrangThai.MinimumWidth = 80;
-
-            // Cell styling
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -376,16 +350,11 @@ namespace QLTV
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-
-            // Layout and responsive settings
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                | System.Windows.Forms.AnchorStyles.Left)
-                | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.dataGridView1.Location = new System.Drawing.Point(27, 150);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -394,69 +363,8 @@ namespace QLTV
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1240, 660);
             this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.None;
-
-            // Keep existing event handlers
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridView1_RowPrePaint);
-            // 
-            // col_MaSach
-            // 
-            this.col_MaSach.HeaderText = "Mã Sách";
-            this.col_MaSach.MinimumWidth = 8;
-            this.col_MaSach.Name = "col_MaSach";
-            this.col_MaSach.ReadOnly = true;
-            // 
-            // col_TenSach
-            // 
-            this.col_TenSach.HeaderText = "Tên Sách";
-            this.col_TenSach.MinimumWidth = 6;
-            this.col_TenSach.Name = "col_TenSach";
-            this.col_TenSach.ReadOnly = true;
-            // 
-            // col_TenTacGia
-            // 
-            this.col_TenTacGia.HeaderText = "Tên Tác giả";
-            this.col_TenTacGia.MinimumWidth = 6;
-            this.col_TenTacGia.Name = "col_TenTacGia";
-            this.col_TenTacGia.ReadOnly = true;
-            // 
-            // col_TheLoai
-            // 
-            this.col_TheLoai.HeaderText = "Thể Loại";
-            this.col_TheLoai.MinimumWidth = 6;
-            this.col_TheLoai.Name = "col_TheLoai";
-            this.col_TheLoai.ReadOnly = true;
-            // 
-            // col_NhaXuatBan
-            // 
-            this.col_NhaXuatBan.HeaderText = "Nhà Xuất Bản";
-            this.col_NhaXuatBan.MinimumWidth = 6;
-            this.col_NhaXuatBan.Name = "col_NhaXuatBan";
-            this.col_NhaXuatBan.ReadOnly = true;
-            // 
-            // col_NamXuatBan
-            // 
-            this.col_NamXuatBan.HeaderText = "Năm Xuất Bản";
-            this.col_NamXuatBan.MinimumWidth = 6;
-            this.col_NamXuatBan.Name = "col_NamXuatBan";
-            this.col_NamXuatBan.ReadOnly = true;
-            // 
-            // col_DonGia
-            // 
-            this.col_DonGia.HeaderText = "Đơn Giá";
-            this.col_DonGia.MinimumWidth = 6;
-            this.col_DonGia.Name = "col_DonGia";
-            this.col_DonGia.ReadOnly = true;
-            // 
-            // col_TrangThai
-            // 
-            this.col_TrangThai.HeaderText = "Trạng Thái";
-            this.col_TrangThai.MinimumWidth = 6;
-            this.col_TrangThai.Name = "col_TrangThai";
-            this.col_TrangThai.ReadOnly = true;
             // 
             // panel_Controls
             // 
@@ -465,10 +373,74 @@ namespace QLTV
             this.panel_Controls.Controls.Add(this.btn_Sua);
             this.panel_Controls.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Controls.Location = new System.Drawing.Point(0, 852);
-            this.panel_Controls.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Controls.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Controls.Name = "panel_Controls";
             this.panel_Controls.Size = new System.Drawing.Size(1969, 98);
             this.panel_Controls.TabIndex = 14;
+            // 
+            // col_MaSach
+            // 
+            this.col_MaSach.FillWeight = 20F;
+            this.col_MaSach.HeaderText = "Mã Sách";
+            this.col_MaSach.MinimumWidth = 8;
+            this.col_MaSach.Name = "col_MaSach";
+            this.col_MaSach.ReadOnly = true;
+            // 
+            // col_TenSach
+            // 
+            this.col_TenSach.FillWeight = 40F;
+            this.col_TenSach.HeaderText = "Tên Sách";
+            this.col_TenSach.MinimumWidth = 6;
+            this.col_TenSach.Name = "col_TenSach";
+            this.col_TenSach.ReadOnly = true;
+            // 
+            // col_TenTacGia
+            // 
+            this.col_TenTacGia.FillWeight = 30F;
+            this.col_TenTacGia.HeaderText = "Tên Tác giả";
+            this.col_TenTacGia.MinimumWidth = 6;
+            this.col_TenTacGia.Name = "col_TenTacGia";
+            this.col_TenTacGia.ReadOnly = true;
+            // 
+            // col_TheLoai
+            // 
+            this.col_TheLoai.FillWeight = 20F;
+            this.col_TheLoai.HeaderText = "Thể Loại";
+            this.col_TheLoai.MinimumWidth = 6;
+            this.col_TheLoai.Name = "col_TheLoai";
+            this.col_TheLoai.ReadOnly = true;
+            // 
+            // col_NhaXuatBan
+            // 
+            this.col_NhaXuatBan.FillWeight = 25F;
+            this.col_NhaXuatBan.HeaderText = "Nhà Xuất Bản";
+            this.col_NhaXuatBan.MinimumWidth = 6;
+            this.col_NhaXuatBan.Name = "col_NhaXuatBan";
+            this.col_NhaXuatBan.ReadOnly = true;
+            // 
+            // col_NamXuatBan
+            // 
+            this.col_NamXuatBan.FillWeight = 8F;
+            this.col_NamXuatBan.HeaderText = "Năm Xuất Bản";
+            this.col_NamXuatBan.MinimumWidth = 6;
+            this.col_NamXuatBan.Name = "col_NamXuatBan";
+            this.col_NamXuatBan.ReadOnly = true;
+            // 
+            // col_DonGia
+            // 
+            this.col_DonGia.FillWeight = 12F;
+            this.col_DonGia.HeaderText = "Đơn Giá";
+            this.col_DonGia.MinimumWidth = 6;
+            this.col_DonGia.Name = "col_DonGia";
+            this.col_DonGia.ReadOnly = true;
+            // 
+            // col_TrangThai
+            // 
+            this.col_TrangThai.FillWeight = 15F;
+            this.col_TrangThai.HeaderText = "Trạng Thái";
+            this.col_TrangThai.MinimumWidth = 6;
+            this.col_TrangThai.Name = "col_TrangThai";
+            this.col_TrangThai.ReadOnly = true;
             // 
             // frm_TrangThaiSach
             // 
@@ -478,7 +450,7 @@ namespace QLTV
             this.Controls.Add(this.panel_Header);
             this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.panel_Controls);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_TrangThaiSach";
             this.Text = "frm_TrangThaiSach";
             this.panel_Header.ResumeLayout(false);
@@ -513,13 +485,13 @@ namespace QLTV
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_NamXuatBan;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_MaSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_TenSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_TenTacGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_TheLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_NhaXuatBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_NamXuatBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_DonGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_TrangThai;
+        private DataGridViewTextBoxColumn col_MaSach;
+        private DataGridViewTextBoxColumn col_TenSach;
+        private DataGridViewTextBoxColumn col_TenTacGia;
+        private DataGridViewTextBoxColumn col_TheLoai;
+        private DataGridViewTextBoxColumn col_NhaXuatBan;
+        private DataGridViewTextBoxColumn col_NamXuatBan;
+        private DataGridViewTextBoxColumn col_DonGia;
+        private DataGridViewTextBoxColumn col_TrangThai;
     }
 }
