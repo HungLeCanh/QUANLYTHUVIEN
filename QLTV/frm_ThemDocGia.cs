@@ -67,5 +67,70 @@ namespace QLTV
             // Đặt con trỏ về trường Số điện thoại
             txt_SoDienThoai.Focus();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_SoDienThoai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_TenDocGia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_DiaChi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_Controls_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_Header_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_Title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_Main_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_Form_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -56,9 +56,10 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label1.Location = new System.Drawing.Point(40, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 23);
+            this.label1.Size = new System.Drawing.Size(125, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "📞 Số điện thoại:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_SoDienThoai
             // 
@@ -69,8 +70,9 @@
             this.txt_SoDienThoai.Location = new System.Drawing.Point(44, 67);
             this.txt_SoDienThoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_SoDienThoai.Name = "txt_SoDienThoai";
-            this.txt_SoDienThoai.Size = new System.Drawing.Size(280, 32);
+            this.txt_SoDienThoai.Size = new System.Drawing.Size(280, 27);
             this.txt_SoDienThoai.TabIndex = 1;
+            this.txt_SoDienThoai.TextChanged += new System.EventHandler(this.txt_SoDienThoai_TextChanged);
             // 
             // txt_TenDocGia
             // 
@@ -81,8 +83,9 @@
             this.txt_TenDocGia.Location = new System.Drawing.Point(44, 127);
             this.txt_TenDocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_TenDocGia.Name = "txt_TenDocGia";
-            this.txt_TenDocGia.Size = new System.Drawing.Size(280, 32);
+            this.txt_TenDocGia.Size = new System.Drawing.Size(280, 27);
             this.txt_TenDocGia.TabIndex = 3;
+            this.txt_TenDocGia.TextChanged += new System.EventHandler(this.txt_TenDocGia_TextChanged);
             // 
             // label2
             // 
@@ -91,9 +94,10 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label2.Location = new System.Drawing.Point(40, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 23);
+            this.label2.Size = new System.Drawing.Size(114, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "👤 Tên độc giả:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_Email
             // 
@@ -104,8 +108,9 @@
             this.txt_Email.Location = new System.Drawing.Point(44, 187);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(280, 32);
+            this.txt_Email.Size = new System.Drawing.Size(280, 27);
             this.txt_Email.TabIndex = 5;
+            this.txt_Email.TextChanged += new System.EventHandler(this.txt_Email_TextChanged);
             // 
             // label3
             // 
@@ -114,9 +119,10 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label3.Location = new System.Drawing.Point(40, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 23);
+            this.label3.Size = new System.Drawing.Size(73, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "✉️ Email:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txt_DiaChi
             // 
@@ -127,8 +133,9 @@
             this.txt_DiaChi.Location = new System.Drawing.Point(44, 247);
             this.txt_DiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_DiaChi.Name = "txt_DiaChi";
-            this.txt_DiaChi.Size = new System.Drawing.Size(280, 32);
+            this.txt_DiaChi.Size = new System.Drawing.Size(280, 27);
             this.txt_DiaChi.TabIndex = 7;
+            this.txt_DiaChi.TextChanged += new System.EventHandler(this.txt_DiaChi_TextChanged);
             // 
             // label4
             // 
@@ -137,9 +144,10 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label4.Location = new System.Drawing.Point(40, 220);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 23);
+            this.label4.Size = new System.Drawing.Size(82, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "🏠 Địa chỉ:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btn_Them
             // 
@@ -184,6 +192,7 @@
             this.panel_Header.Name = "panel_Header";
             this.panel_Header.Size = new System.Drawing.Size(1228, 80);
             this.panel_Header.TabIndex = 10;
+            this.panel_Header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Header_Paint);
             // 
             // lbl_Title
             // 
@@ -192,9 +201,10 @@
             this.lbl_Title.ForeColor = System.Drawing.Color.White;
             this.lbl_Title.Location = new System.Drawing.Point(25, 25);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(286, 41);
+            this.lbl_Title.Size = new System.Drawing.Size(230, 32);
             this.lbl_Title.TabIndex = 0;
             this.lbl_Title.Text = "📝 THÊM ĐỘC GIẢ";
+            this.lbl_Title.Click += new System.EventHandler(this.lbl_Title_Click);
             // 
             // panel_Main
             // 
@@ -206,6 +216,7 @@
             this.panel_Main.Padding = new System.Windows.Forms.Padding(30);
             this.panel_Main.Size = new System.Drawing.Size(1228, 390);
             this.panel_Main.TabIndex = 11;
+            this.panel_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Main_Paint);
             // 
             // panel_Form
             // 
@@ -223,6 +234,7 @@
             this.panel_Form.Name = "panel_Form";
             this.panel_Form.Size = new System.Drawing.Size(1168, 330);
             this.panel_Form.TabIndex = 0;
+            this.panel_Form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Form_Paint);
             // 
             // panel_Controls
             // 
@@ -234,10 +246,11 @@
             this.panel_Controls.Name = "panel_Controls";
             this.panel_Controls.Size = new System.Drawing.Size(1228, 90);
             this.panel_Controls.TabIndex = 12;
+            this.panel_Controls.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Controls_Paint);
             // 
             // frm_ThemDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1228, 560);
