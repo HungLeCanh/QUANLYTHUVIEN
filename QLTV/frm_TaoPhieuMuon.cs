@@ -188,13 +188,23 @@ namespace QLTV
                     return;
                 }
 
+                // tính toán thành tiền bằng đơn giá nhân cho số ngày mượn
+                int soNgayMuon = (dtp_NgayTraDuKien.Value - dtp_NgayMuon.Value).Days + 1;
+                if (soNgayMuon <= 0)
+                {
+                    MessageBox.Show("Ngày trả dự kiến phải sau ngày mượn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                decimal thanhTien = donGia * soNgayMuon;
+
+
                 // Thêm vào danh sách
                 SachDaChon sachMoi = new SachDaChon
                 {
                     MaSach = maSach,
                     TenSach = tenSach,
                     DonGiaMuon = donGia,
-                    ThanhTien = donGia // Có thể tính toán phức tạp hơn nếu cần
+                    ThanhTien = thanhTien
                 };
 
                 danhSachSachDaChon.Add(sachMoi);
