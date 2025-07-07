@@ -62,17 +62,12 @@ namespace QLTV
 
             try
             {
-                // Lấy dữ liệu từ dòng đang chọn
-                string sdt = dgv_danhSachDocGia.CurrentRow.Cells["col_SDT"].Value?.ToString();
-                string hoTen = dgv_danhSachDocGia.CurrentRow.Cells["col_hoTen"].Value?.ToString();
-                string email = dgv_danhSachDocGia.CurrentRow.Cells["col_email"].Value?.ToString();
-                string diaChi = dgv_danhSachDocGia.CurrentRow.Cells["col_diaChi"].Value?.ToString();
+                // Lấy dữ liệu từ các ô văn bản
+                string sdt = txt_SoDienThoai.Text.Trim();
+                string hoTen = txt_HoTen.Text.Trim();
+                string email = txt_Email.Text.Trim();
+                string diaChi = txt_DiaChi.Text.Trim();
 
-                // Xử lý ngày đăng ký (đảm bảo định dạng đúng cho MySQL)
-                object ngayDangKyObj = dgv_danhSachDocGia.CurrentRow.Cells["col_ngayDangKy"].Value;
-                string ngayDangKy = ngayDangKyObj != null ?
-                    Convert.ToDateTime(ngayDangKyObj).ToString("yyyy-MM-dd") :
-                    DateTime.Now.ToString("yyyy-MM-dd");
 
                 // Tạo câu lệnh SQL UPDATE
                 string sql = $@"UPDATE doc_gia 
@@ -112,7 +107,7 @@ namespace QLTV
             try
             {
                 // Lấy số điện thoại của độc giả đang chọn
-                string sdt = dgv_danhSachDocGia.CurrentRow.Cells["col_SDT"].Value?.ToString();
+                string sdt = txt_SoDienThoai.Text.Trim();
                 // Xác nhận trước khi xóa
                 DialogResult dialogResult = MessageBox.Show($"Bạn có chắc chắn muốn xóa độc giả với số điện thoại {sdt}?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
@@ -144,29 +139,45 @@ namespace QLTV
             LoadData();
         }
 
-        private void dgv_danhSachDocGia_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_danhSachDocGia_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            // lay data o dong dang chon gan cho cac o text box
+            if (dgv_danhSachDocGia.CurrentRow != null)
+            {
+                txt_SoDienThoai.Text = dgv_danhSachDocGia.CurrentRow.Cells["col_SDT"].Value?.ToString();
+                txt_HoTen.Text = dgv_danhSachDocGia.CurrentRow.Cells["col_hoTen"].Value?.ToString();
+                txt_Email.Text = dgv_danhSachDocGia.CurrentRow.Cells["col_email"].Value?.ToString();
+                txt_DiaChi.Text = dgv_danhSachDocGia.CurrentRow.Cells["col_diaChi"].Value?.ToString();
+            }
         }
 
-        private void panel_Header_Paint(object sender, PaintEventArgs e)
+        private void panel_Controls_Resize(object sender, EventArgs e)
         {
+            // Tổng chiều rộng các nút và khoảng cách giữa chúng
+            int buttonWidth = btn_Sua.Width;
+            int buttonSpacing = 20;
+            int totalWidth = buttonWidth * 3 + buttonSpacing * 2;
 
+            // Tính vị trí bắt đầu để căn giữa
+            int startX = (panel_Controls.Width - totalWidth) / 2;
+            int y = btn_Sua.Top; // Giữ nguyên vị trí theo chiều dọc
+
+            btn_Sua.Location = new Point(startX, y);
+            btn_Xoa.Location = new Point(startX + buttonWidth + buttonSpacing, y);
+            btn_LamMoi.Location = new Point(startX + (buttonWidth + buttonSpacing) * 2, y);
         }
 
-        private void lbl_Title_Click(object sender, EventArgs e)
+        // Thêm phương thức này vào file code-behind của form
+        private void dgv_danhSachDocGia_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-
-        }
-
-        private void panel_Controls_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel_Main_Paint(object sender, PaintEventArgs e)
-        {
-
+            if (e.RowIndex % 2 == 1) // Hàng số lẻ
+            {
+                dgv_danhSachDocGia.Rows[e.RowIndex].DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(240, 240, 240); // Màu xám nhạt
+            }
+            else // Hàng số chẵn
+            {
+                dgv_danhSachDocGia.Rows[e.RowIndex].DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            }
         }
     }
 }

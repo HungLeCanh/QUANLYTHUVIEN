@@ -59,7 +59,6 @@ namespace QLTV
             this.txt_NamXuatBan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel_Controls = new System.Windows.Forms.Panel();
             this.col_MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TenTacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +67,7 @@ namespace QLTV
             this.col_NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_Controls = new System.Windows.Forms.Panel();
             this.panel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_danhSachDocGia)).BeginInit();
             this.panel_Main.SuspendLayout();
@@ -83,7 +83,7 @@ namespace QLTV
             this.panel_Header.Location = new System.Drawing.Point(0, 0);
             this.panel_Header.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Header.Name = "panel_Header";
-            this.panel_Header.Size = new System.Drawing.Size(1969, 98);
+            this.panel_Header.Size = new System.Drawing.Size(1924, 98);
             this.panel_Header.TabIndex = 13;
             // 
             // lbl_Title
@@ -184,7 +184,7 @@ namespace QLTV
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Xoa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_Xoa.Location = new System.Drawing.Point(1293, 18);
+            this.btn_Xoa.Location = new System.Drawing.Point(1248, 18);
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(13, 2, 13, 2);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(160, 55);
@@ -201,7 +201,7 @@ namespace QLTV
             this.btn_Sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sua.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Sua.ForeColor = System.Drawing.Color.White;
-            this.btn_Sua.Location = new System.Drawing.Point(1107, 18);
+            this.btn_Sua.Location = new System.Drawing.Point(1062, 18);
             this.btn_Sua.Margin = new System.Windows.Forms.Padding(13, 2, 13, 2);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(160, 55);
@@ -233,7 +233,7 @@ namespace QLTV
             this.panel_Main.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.panel_Main.Size = new System.Drawing.Size(1969, 852);
+            this.panel_Main.Size = new System.Drawing.Size(1924, 852);
             this.panel_Main.TabIndex = 15;
             // 
             // cbb_TheLoai
@@ -448,22 +448,10 @@ namespace QLTV
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 35;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1240, 660);
+            this.dataGridView1.Size = new System.Drawing.Size(1195, 660);
             this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridView1_RowPrePaint);
-            // 
-            // panel_Controls
-            // 
-            this.panel_Controls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.panel_Controls.Controls.Add(this.btn_Xoa);
-            this.panel_Controls.Controls.Add(this.btn_Sua);
-            this.panel_Controls.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_Controls.Location = new System.Drawing.Point(0, 852);
-            this.panel_Controls.Margin = new System.Windows.Forms.Padding(4);
-            this.panel_Controls.Name = "panel_Controls";
-            this.panel_Controls.Size = new System.Drawing.Size(1969, 98);
-            this.panel_Controls.TabIndex = 14;
             // 
             // col_MaSach
             // 
@@ -529,11 +517,23 @@ namespace QLTV
             this.col_TrangThai.Name = "col_TrangThai";
             this.col_TrangThai.ReadOnly = true;
             // 
+            // panel_Controls
+            // 
+            this.panel_Controls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.panel_Controls.Controls.Add(this.btn_Xoa);
+            this.panel_Controls.Controls.Add(this.btn_Sua);
+            this.panel_Controls.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_Controls.Location = new System.Drawing.Point(0, 852);
+            this.panel_Controls.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_Controls.Name = "panel_Controls";
+            this.panel_Controls.Size = new System.Drawing.Size(1924, 98);
+            this.panel_Controls.TabIndex = 14;
+            // 
             // frm_TrangThaiSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1969, 950);
+            this.ClientSize = new System.Drawing.Size(1924, 950);
             this.Controls.Add(this.panel_Header);
             this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.panel_Controls);
