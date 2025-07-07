@@ -67,13 +67,6 @@ namespace QLTV
                 string hoTen = dgv_danhSachDocGia.CurrentRow.Cells["col_hoTen"].Value?.ToString();
                 string email = dgv_danhSachDocGia.CurrentRow.Cells["col_email"].Value?.ToString();
                 string diaChi = dgv_danhSachDocGia.CurrentRow.Cells["col_diaChi"].Value?.ToString();
-
-                // Xử lý ngày đăng ký (đảm bảo định dạng đúng cho MySQL)
-                object ngayDangKyObj = dgv_danhSachDocGia.CurrentRow.Cells["col_ngayDangKy"].Value;
-                string ngayDangKy = ngayDangKyObj != null ?
-                    Convert.ToDateTime(ngayDangKyObj).ToString("yyyy-MM-dd") :
-                    DateTime.Now.ToString("yyyy-MM-dd");
-
                 // Tạo câu lệnh SQL UPDATE
                 string sql = $@"UPDATE doc_gia 
                        SET ho_ten = N'{hoTen}', 

@@ -27,10 +27,6 @@ namespace QLTV
             LoadDB();
         }
 
-
-        // Hàm xử lý Resize
-        
-
         public void LoadDB() {
             // Sử dụng đúng tên bảng trong CSDL
             string sql = "SELECT * FROM sach";
@@ -59,11 +55,6 @@ namespace QLTV
 
             // Cho phép nội dung ô văn bản tự động xuống dòng
             dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
-            // Đối với một số cột cụ thể, bạn có thể điều chỉnh riêng
-            // Ví dụ:
-           
-
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -151,22 +142,6 @@ namespace QLTV
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //lấy dữ liệu trong dòng đã chọn và set vào các ô nhập liệu
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-            {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-               
-                txt_TenSach.Text = row.Cells["col_TenSach"].Value?.ToString();
-                cbb_TheLoai.Text = row.Cells["col_TheLoai"].Value?.ToString();
-                txt_NhaXuatBan.Text = row.Cells["col_NhaXuatBan"].Value?.ToString();
-                txt_NamXuatBan.Text = row.Cells["col_NamXuatBan"].Value?.ToString();
-                txt_DonGiaMuon.Text = row.Cells["col_DonGia"].Value?.ToString();
-                txt_TenTacGia.Text = row.Cells["col_TenTacGia"].Value?.ToString();
-            }
-        }
-
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -204,6 +179,22 @@ namespace QLTV
             }else
             {
                 MessageBox.Show("Vui lòng chọn một hàng để xóa.");
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //lấy dữ liệu trong dòng đã chọn và set vào các ô nhập liệu
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                txt_TenSach.Text = row.Cells["col_TenSach"].Value?.ToString();
+                cbb_TheLoai.Text = row.Cells["col_TheLoai"].Value?.ToString();
+                txt_NhaXuatBan.Text = row.Cells["col_NhaXuatBan"].Value?.ToString();
+                txt_NamXuatBan.Text = row.Cells["col_NamXuatBan"].Value?.ToString();
+                txt_DonGiaMuon.Text = row.Cells["col_DonGia"].Value?.ToString();
+                txt_TenTacGia.Text = row.Cells["col_TenTacGia"].Value?.ToString();
             }
         }
     }
