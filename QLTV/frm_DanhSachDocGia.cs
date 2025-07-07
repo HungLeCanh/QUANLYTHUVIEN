@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mysqlx.Resultset;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,43 +53,22 @@ namespace QLTV
         }
         private void suaEventWhenCusorOuted()
         {
-
-            int result = 0;
             try
-            {
-                for (int i = 0; i < this.dgv_danhSachDocGia.RowCount; i++)
-                {
-
-                    if (this.dgv_danhSachDocGia.Rows[i].Cells["col_SDT"].Value != null)
-                    {
-                        string sdt = dgv_danhSachDocGia.Rows[i].Cells["col_SDT"].Value?.ToString();
-                        string hoTen = dgv_danhSachDocGia.Rows[i].Cells["col_hoTen"].Value?.ToString();
-                        string email = dgv_danhSachDocGia.Rows[i].Cells["col_email"].Value?.ToString();
-                        string diaChi = dgv_danhSachDocGia.Rows[i].Cells["col_diaChi"].Value?.ToString();
-                        // Xử lý ngày đăng ký (đảm bảo định dạng đúng cho MySQL)
-                        object ngayDangKyObj = dgv_danhSachDocGia.Rows[i].Cells["col_ngayDangKy"].Value;
-                        string ngayDangKy = ngayDangKyObj != null ?
-                        Convert.ToDateTime(ngayDangKyObj).ToString("yyyy-MM-dd") :
-                        DateTime.Now.ToString("yyyy-MM-dd");
+            {     
+                  string sdt = this.txt_SDT.Text.ToString();
+                  string email = this.txt_Email.Text.ToString();
+                  string hoTen = this.txt_HoTen.Text.ToString();
+                  string diaChi = this.txt_DiaChi.Text.ToString();
                         // Tạo câu lệnh SQL UPDATE
-                        string sql = $@"UPDATE doc_gia 
+                  string sql = $@"UPDATE doc_gia 
                        SET ho_ten = '{hoTen}', 
                            email = '{email}', 
-                           dia_chi = '{diaChi}', 
-                           ngay_dang_ky = '{ngayDangKy}' 
+                           dia_chi = '{diaChi}' 
                        WHERE so_dien_thoai = '{sdt}'";
-                        result += db.ExecuteNonQuery(sql);
-                    }
-                }
-                if (result > 0)
+                        int result = db.ExecuteNonQuery(sql);   
+                if(result > 0)
                 {
-                    MessageBox.Show($"Cập nhật thông tin độc giả thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // Tải lại dữ liệu
-                    LoadData();
-                }
-                else
-                {
-                    MessageBox.Show("Không thể cập nhật thông tin độc giả!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Sửa thành công thông tin độc giả");
                 }
             }
             catch (Exception ex)
@@ -145,6 +125,100 @@ namespace QLTV
         {
             // sửa một lúc nhiều row được
             suaEventWhenCusorOuted();
+            LoadData();
+        }
+
+        private void dgv_danhSachDocGia_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            chonThongTinDocGia();
+        }
+
+        private void chonThongTinDocGia()
+        {
+            DataGridViewRow dtRow  = this.dgv_danhSachDocGia.CurrentRow;
+            if (dtRow != null)
+            {
+                this.txt_SDT.Text = dtRow.Cells["col_SDT"].Value.ToString();
+                this.txt_Email.Text = dtRow.Cells["col_email"].Value.ToString();
+                this.txt_HoTen.Text = dtRow.Cells["col_hoTen"].Value.ToString();
+                this.txt_DiaChi.Text = dtRow.Cells["col_diaChi"].Value.ToString();
+            }
+        }
+
+        private void btn_Huy_Click(object sender, EventArgs e)
+        {
+            this.txt_SDT.Clear();
+            this.txt_Email.Clear();
+            this.txt_HoTen.Clear();
+            this.txt_DiaChi.Clear();
+            if(this.txt_TimKiem.Text != "Số điện thoại")
+            {
+                LoadData();
+                this.txt_TimKiem.Text = "Số điện thoại";
+            }
+            
+        }
+        // Placeholder text handling for search box
+        private void txt_TimKiem_Enter(object sender, EventArgs e)
+        {
+            if (txt_TimKiem.Text == "Số điện thoại")
+            {
+                txt_TimKiem.Text = "";
+                txt_TimKiem.ForeColor = Color.Black;
+            }
+        }
+
+        private void txt_TimKiem_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_TimKiem.Text))
+            {
+                txt_TimKiem.Text = "Số điện thoại";
+                txt_TimKiem.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txt_TimKiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                TimKiemDocGia();
+                e.SuppressKeyPress = true; // Prevent the beep sound
+            }
+        }
+
+        private void btn_TimKiem_Click(object sender, EventArgs e)
+        {
+            TimKiemDocGia();
+        }
+
+        private void TimKiemDocGia()
+        {
+            string searchText = txt_TimKiem.Text;
+
+            // If the search box contains the placeholder text or is empty, load all data
+            if (string.IsNullOrWhiteSpace(searchText) || searchText == "Số điện thoại" || searchText.Length < 10)
+            {
+                MessageBox.Show("Số điện thoại không phù hợp (không được để trống và không được bé hơn 10 chữ số)");
+                LoadData();
+                return;
+            }
+
+            // Search for the phone number
+            string sql = $"SELECT * FROM doc_gia WHERE so_dien_thoai LIKE '%{searchText}%'";
+            DataTable dt = db.ExecuteQuery(sql);
+              if(dt != null)
+             {
+               // Update the DataGridView
+                dgv_danhSachDocGia.DataSource = dt;
+                chonThongTinDocGia();
+              }
+
+            // If no results found, show a message
+            if (dt.Rows.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy độc giả với số điện thoại này!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
