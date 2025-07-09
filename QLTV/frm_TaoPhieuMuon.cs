@@ -255,6 +255,12 @@ namespace QLTV
 
         private void CapNhatTongTien()
         {
+            int soNgayMuon = (dtp_NgayTraDuKien.Value - dtp_NgayMuon.Value).Days + 1;
+            // tính lại tien thue cho tung sach theo thoi gian
+            foreach (var s in danhSachSachDaChon)
+            {
+                s.ThanhTien = s.DonGiaMuon*soNgayMuon;
+            }
             tongTien = danhSachSachDaChon.Sum(s => s.ThanhTien);
             txt_TongTien.Text = tongTien.ToString("N0");
         }
@@ -415,6 +421,12 @@ namespace QLTV
 
             // Focus về textbox số điện thoại
             txt_SoDienThoai.Focus();
+        }
+
+        private void dtp_NgayTraDuKien_ValueChanged(object sender, EventArgs e)
+        {
+            CapNhatTongTien();
+            CapNhatDanhSachSachDaChon();
         }
     }
 
