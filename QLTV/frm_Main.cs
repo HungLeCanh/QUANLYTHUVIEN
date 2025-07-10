@@ -104,5 +104,13 @@ namespace QLTV
                 OpenForm(new frm_TrangThaiSach());
             }   
         }
+
+        private void danhSáchPhiếuMượnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_DanhSachPhieuMuon"] == null)
+            {
+                OpenForm(new frm_DanhSachPhieuMuon());
+            }
+        }
     }
 }
