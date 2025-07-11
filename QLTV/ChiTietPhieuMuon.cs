@@ -15,10 +15,10 @@ namespace QLTV
 
     internal class ChiTietPhieuMuon
     {
-        // Properties tương ứng với các cột trong bảng chi_tiet_phieu_muon
         private int maChiTiet { get; set; }
         private string maPhieuMuon { get; set; }
         private int maSach { get; set; }
+        private string tenSach { get; set; }
         private decimal donGiaMuon { get; set; }
         private decimal thanhTien { get; set; }
         private TrangThaiChiTietPhieuMuon trangThai { get; set; }

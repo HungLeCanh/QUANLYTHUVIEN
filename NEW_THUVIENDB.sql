@@ -130,6 +130,35 @@ BEGIN
     );
 END;
 GO
+-- Cập nhật trạng thái khi thanh toán hoá đơn
+GO
+CREATE TRIGGER TR_after_update_hoa_don
+ON hoa_don
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Chỉ xử lý nếu trạng thái được cập nhật thành 'da_thanh_toan'
+    UPDATE pm
+    SET trang_thai = 'da_tra',
+        ngay_tra_thuc_te = ISNULL(i.ngay_thanh_toan, GETDATE())
+    FROM phieu_muon pm
+    INNER JOIN inserted i ON pm.ma_phieu_muon = i.ma_phieu_muon
+    INNER JOIN deleted d ON i.ma_phieu_muon = d.ma_phieu_muon
+    WHERE i.trang_thai = 'da_thanh_toan' AND d.trang_thai != 'da_thanh_toan';
+
+    -- Cập nhật các chi tiết phiếu mượn về 'da_tra'
+    UPDATE ct
+    SET trang_thai = 'da_tra'
+    FROM chi_tiet_phieu_muon ct
+    INNER JOIN inserted i ON ct.ma_phieu_muon = i.ma_phieu_muon
+    INNER JOIN deleted d ON i.ma_phieu_muon = d.ma_phieu_muon
+    WHERE i.trang_thai = 'da_thanh_toan' AND d.trang_thai != 'da_thanh_toan';
+END;
+GO
+
+
 
 -- Tạo một số dữ liệu mẫu để test
 INSERT INTO doc_gia (so_dien_thoai, ho_ten, email, dia_chi) VALUES

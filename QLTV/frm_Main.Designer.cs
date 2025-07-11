@@ -145,6 +145,7 @@
             this.xuấtHoáĐơnToolStripMenuItem.Name = "xuấtHoáĐơnToolStripMenuItem";
             this.xuấtHoáĐơnToolStripMenuItem.Size = new System.Drawing.Size(319, 30);
             this.xuấtHoáĐơnToolStripMenuItem.Text = "📤 Xuất Hoá đơn";
+            this.xuấtHoáĐơnToolStripMenuItem.Click += new System.EventHandler(this.xuấtHoáĐơnToolStripMenuItem_Click);
             // 
             // hoáĐơnĐãThanhToánToolStripMenuItem
             // 
