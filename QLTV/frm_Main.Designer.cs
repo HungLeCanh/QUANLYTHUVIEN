@@ -150,8 +150,9 @@
             // hoáĐơnĐãThanhToánToolStripMenuItem
             // 
             this.hoáĐơnĐãThanhToánToolStripMenuItem.Name = "hoáĐơnĐãThanhToánToolStripMenuItem";
-            this.hoáĐơnĐãThanhToánToolStripMenuItem.Size = new System.Drawing.Size(319, 30);
-            this.hoáĐơnĐãThanhToánToolStripMenuItem.Text = "✅ Hoá đơn đã thanh toán";
+            this.hoáĐơnĐãThanhToánToolStripMenuItem.Size = new System.Drawing.Size(293, 30);
+            this.hoáĐơnĐãThanhToánToolStripMenuItem.Text = "✅ Danh Sách Hoá Đơn";
+            this.hoáĐơnĐãThanhToánToolStripMenuItem.Click += new System.EventHandler(this.hoáĐơnĐãThanhToánToolStripMenuItem_Click);
             // 
             // sáchToolStripMenuItem
             // 

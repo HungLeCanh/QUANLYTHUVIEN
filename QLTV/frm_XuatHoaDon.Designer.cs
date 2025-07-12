@@ -1,4 +1,7 @@
-﻿namespace QLTV
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace QLTV
 {
     partial class frm_XuatHoaDon
     {
@@ -28,13 +31,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_TimKiem = new System.Windows.Forms.Panel();
             this.lbl_TimKiem = new System.Windows.Forms.Label();
             this.txt_TimKiem = new System.Windows.Forms.TextBox();
             this.btn_TimKiem = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.pnl_PhieuMuon = new System.Windows.Forms.Panel();
-            this.lbl_DanhSachPhieuMuon = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.dgv_PhieuMuon = new System.Windows.Forms.DataGridView();
             this.col_MaPhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_SoDienThoaiDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +51,7 @@
             this.col_NgayTraDuKien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_NgayTraThucTe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TrangThaiPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_DanhSachPhieuMuon = new System.Windows.Forms.Label();
             this.pnl_ThongTin = new System.Windows.Forms.Panel();
             this.btn_HomNay = new System.Windows.Forms.Button();
             this.btn_TinhLaiThanhTien = new System.Windows.Forms.Button();
@@ -72,6 +82,7 @@
             this.col_DonGiaMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TrangThaiSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnl_Header = new System.Windows.Forms.Panel();
             this.pnl_TimKiem.SuspendLayout();
             this.pnl_PhieuMuon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PhieuMuon)).BeginInit();
@@ -79,6 +90,7 @@
             this.pnl_Main.SuspendLayout();
             this.pnl_ChiTietPhieuMuon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ChiTietPhieuMuon)).BeginInit();
+            this.pnl_Header.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_TimKiem
@@ -91,7 +103,7 @@
             this.pnl_TimKiem.Location = new System.Drawing.Point(983, 0);
             this.pnl_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_TimKiem.Name = "pnl_TimKiem";
-            this.pnl_TimKiem.Size = new System.Drawing.Size(941, 74);
+            this.pnl_TimKiem.Size = new System.Drawing.Size(973, 66);
             this.pnl_TimKiem.TabIndex = 0;
             // 
             // lbl_TimKiem
@@ -140,31 +152,44 @@
             // 
             // pnl_PhieuMuon
             // 
-            this.pnl_PhieuMuon.Controls.Add(this.lbl_DanhSachPhieuMuon);
+            this.pnl_PhieuMuon.Controls.Add(this.label4);
             this.pnl_PhieuMuon.Controls.Add(this.dgv_PhieuMuon);
             this.pnl_PhieuMuon.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_PhieuMuon.Location = new System.Drawing.Point(0, 0);
             this.pnl_PhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_PhieuMuon.Name = "pnl_PhieuMuon";
-            this.pnl_PhieuMuon.Size = new System.Drawing.Size(983, 893);
+            this.pnl_PhieuMuon.Size = new System.Drawing.Size(983, 813);
             this.pnl_PhieuMuon.TabIndex = 1;
             // 
-            // lbl_DanhSachPhieuMuon
+            // label4
             // 
-            this.lbl_DanhSachPhieuMuon.AutoSize = true;
-            this.lbl_DanhSachPhieuMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DanhSachPhieuMuon.Location = new System.Drawing.Point(16, 12);
-            this.lbl_DanhSachPhieuMuon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_DanhSachPhieuMuon.Name = "lbl_DanhSachPhieuMuon";
-            this.lbl_DanhSachPhieuMuon.Size = new System.Drawing.Size(233, 25);
-            this.lbl_DanhSachPhieuMuon.TabIndex = 0;
-            this.lbl_DanhSachPhieuMuon.Text = "Danh sách phiếu mượn";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(13, 9);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(231, 28);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Danh sách phiếu mượn";
             // 
             // dgv_PhieuMuon
             // 
             this.dgv_PhieuMuon.AllowUserToAddRows = false;
             this.dgv_PhieuMuon.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgv_PhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_PhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_PhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_PhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_PhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_PhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_PhieuMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaPhieuMuon,
@@ -173,11 +198,21 @@
             this.col_NgayTraDuKien,
             this.col_NgayTraThucTe,
             this.col_TrangThaiPhieu});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_PhieuMuon.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_PhieuMuon.EnableHeadersVisualStyles = false;
             this.dgv_PhieuMuon.Location = new System.Drawing.Point(16, 41);
             this.dgv_PhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_PhieuMuon.MultiSelect = false;
             this.dgv_PhieuMuon.Name = "dgv_PhieuMuon";
             this.dgv_PhieuMuon.ReadOnly = true;
+            this.dgv_PhieuMuon.RowHeadersVisible = false;
             this.dgv_PhieuMuon.RowHeadersWidth = 51;
             this.dgv_PhieuMuon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_PhieuMuon.Size = new System.Drawing.Size(959, 931);
@@ -232,6 +267,18 @@
             this.col_TrangThaiPhieu.Name = "col_TrangThaiPhieu";
             this.col_TrangThaiPhieu.ReadOnly = true;
             // 
+            // lbl_DanhSachPhieuMuon
+            // 
+            this.lbl_DanhSachPhieuMuon.AutoSize = true;
+            this.lbl_DanhSachPhieuMuon.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_DanhSachPhieuMuon.ForeColor = System.Drawing.Color.White;
+            this.lbl_DanhSachPhieuMuon.Location = new System.Drawing.Point(61, 20);
+            this.lbl_DanhSachPhieuMuon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_DanhSachPhieuMuon.Name = "lbl_DanhSachPhieuMuon";
+            this.lbl_DanhSachPhieuMuon.Size = new System.Drawing.Size(216, 41);
+            this.lbl_DanhSachPhieuMuon.TabIndex = 0;
+            this.lbl_DanhSachPhieuMuon.Text = "Xuất Hoá Đơn";
+            // 
             // pnl_ThongTin
             // 
             this.pnl_ThongTin.Controls.Add(this.btn_HomNay);
@@ -254,10 +301,10 @@
             this.pnl_ThongTin.Controls.Add(this.lbl_TrangThai);
             this.pnl_ThongTin.Controls.Add(this.cbo_TrangThai);
             this.pnl_ThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_ThongTin.Location = new System.Drawing.Point(983, 74);
+            this.pnl_ThongTin.Location = new System.Drawing.Point(983, 66);
             this.pnl_ThongTin.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ThongTin.Name = "pnl_ThongTin";
-            this.pnl_ThongTin.Size = new System.Drawing.Size(941, 394);
+            this.pnl_ThongTin.Size = new System.Drawing.Size(973, 349);
             this.pnl_ThongTin.TabIndex = 3;
             // 
             // btn_HomNay
@@ -480,10 +527,10 @@
             this.pnl_Main.Controls.Add(this.pnl_TimKiem);
             this.pnl_Main.Controls.Add(this.pnl_PhieuMuon);
             this.pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Main.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Main.Location = new System.Drawing.Point(0, 80);
             this.pnl_Main.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Main.Name = "pnl_Main";
-            this.pnl_Main.Size = new System.Drawing.Size(1924, 893);
+            this.pnl_Main.Size = new System.Drawing.Size(1956, 813);
             this.pnl_Main.TabIndex = 1;
             // 
             // pnl_ChiTietPhieuMuon
@@ -491,10 +538,10 @@
             this.pnl_ChiTietPhieuMuon.Controls.Add(this.lbl_ChiTietPhieuMuon);
             this.pnl_ChiTietPhieuMuon.Controls.Add(this.dgv_ChiTietPhieuMuon);
             this.pnl_ChiTietPhieuMuon.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_ChiTietPhieuMuon.Location = new System.Drawing.Point(983, 468);
+            this.pnl_ChiTietPhieuMuon.Location = new System.Drawing.Point(983, 415);
             this.pnl_ChiTietPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ChiTietPhieuMuon.Name = "pnl_ChiTietPhieuMuon";
-            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(941, 425);
+            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(973, 398);
             this.pnl_ChiTietPhieuMuon.TabIndex = 2;
             // 
             // lbl_ChiTietPhieuMuon
@@ -512,8 +559,20 @@
             // 
             this.dgv_ChiTietPhieuMuon.AllowUserToAddRows = false;
             this.dgv_ChiTietPhieuMuon.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgv_ChiTietPhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_ChiTietPhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_ChiTietPhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ChiTietPhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_ChiTietPhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_ChiTietPhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_ChiTietPhieuMuon.ColumnHeadersHeight = 29;
             this.dgv_ChiTietPhieuMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaSach,
             this.col_TenSach,
@@ -521,14 +580,24 @@
             this.col_DonGiaMuon,
             this.col_ThanhTien,
             this.col_TrangThaiSach});
-            this.dgv_ChiTietPhieuMuon.Location = new System.Drawing.Point(13, 41);
-            this.dgv_ChiTietPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ChiTietPhieuMuon.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_ChiTietPhieuMuon.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgv_ChiTietPhieuMuon.EnableHeadersVisualStyles = false;
+            this.dgv_ChiTietPhieuMuon.Location = new System.Drawing.Point(0, 40);
             this.dgv_ChiTietPhieuMuon.MultiSelect = false;
             this.dgv_ChiTietPhieuMuon.Name = "dgv_ChiTietPhieuMuon";
             this.dgv_ChiTietPhieuMuon.ReadOnly = true;
+            this.dgv_ChiTietPhieuMuon.RowHeadersVisible = false;
             this.dgv_ChiTietPhieuMuon.RowHeadersWidth = 51;
             this.dgv_ChiTietPhieuMuon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ChiTietPhieuMuon.Size = new System.Drawing.Size(990, 428);
+            this.dgv_ChiTietPhieuMuon.Size = new System.Drawing.Size(973, 358);
             this.dgv_ChiTietPhieuMuon.TabIndex = 1;
             // 
             // col_MaSach
@@ -579,14 +648,25 @@
             this.col_TrangThaiSach.Name = "col_TrangThaiSach";
             this.col_TrangThaiSach.ReadOnly = true;
             // 
+            // pnl_Header
+            // 
+            this.pnl_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.pnl_Header.Controls.Add(this.lbl_DanhSachPhieuMuon);
+            this.pnl_Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Header.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Header.Name = "pnl_Header";
+            this.pnl_Header.Size = new System.Drawing.Size(1956, 80);
+            this.pnl_Header.TabIndex = 2;
+            // 
             // frm_XuatHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 893);
             this.Controls.Add(this.pnl_Main);
+            this.Controls.Add(this.pnl_Header);
             this.Name = "frm_XuatHoaDon";
-            this.Text = "frm_XuatHoaDon";
+            this.Text = "Xuất Hoá Đơn";
             this.Load += new System.EventHandler(this.frm_XuatHoaDon_Load);
             this.pnl_TimKiem.ResumeLayout(false);
             this.pnl_TimKiem.PerformLayout();
@@ -599,6 +679,8 @@
             this.pnl_ChiTietPhieuMuon.ResumeLayout(false);
             this.pnl_ChiTietPhieuMuon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ChiTietPhieuMuon)).EndInit();
+            this.pnl_Header.ResumeLayout(false);
+            this.pnl_Header.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -648,5 +730,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_DonGiaMuon;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_ThanhTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_TrangThaiSach;
+        private System.Windows.Forms.Panel pnl_Header;
+        private System.Windows.Forms.Label label4;
     }
 }
