@@ -43,6 +43,9 @@
             this.col_NgayTraThucTe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TrangThaiPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnl_ThongTin = new System.Windows.Forms.Panel();
+            this.btn_HomNay = new System.Windows.Forms.Button();
+            this.btn_TinhLaiThanhTien = new System.Windows.Forms.Button();
+            this.btn_ThanhToan = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_ThanhTien = new System.Windows.Forms.TextBox();
@@ -63,9 +66,6 @@
             this.pnl_ChiTietPhieuMuon = new System.Windows.Forms.Panel();
             this.lbl_ChiTietPhieuMuon = new System.Windows.Forms.Label();
             this.dgv_ChiTietPhieuMuon = new System.Windows.Forms.DataGridView();
-            this.btn_TinhLaiThanhTien = new System.Windows.Forms.Button();
-            this.btn_ThanhToan = new System.Windows.Forms.Button();
-            this.btn_HomNay = new System.Windows.Forms.Button();
             this.col_MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,7 +91,7 @@
             this.pnl_TimKiem.Location = new System.Drawing.Point(983, 0);
             this.pnl_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_TimKiem.Name = "pnl_TimKiem";
-            this.pnl_TimKiem.Size = new System.Drawing.Size(973, 74);
+            this.pnl_TimKiem.Size = new System.Drawing.Size(941, 74);
             this.pnl_TimKiem.TabIndex = 0;
             // 
             // lbl_TimKiem
@@ -257,8 +257,46 @@
             this.pnl_ThongTin.Location = new System.Drawing.Point(983, 74);
             this.pnl_ThongTin.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ThongTin.Name = "pnl_ThongTin";
-            this.pnl_ThongTin.Size = new System.Drawing.Size(973, 394);
+            this.pnl_ThongTin.Size = new System.Drawing.Size(941, 394);
             this.pnl_ThongTin.TabIndex = 3;
+            // 
+            // btn_HomNay
+            // 
+            this.btn_HomNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HomNay.Location = new System.Drawing.Point(473, 260);
+            this.btn_HomNay.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_HomNay.Name = "btn_HomNay";
+            this.btn_HomNay.Size = new System.Drawing.Size(107, 34);
+            this.btn_HomNay.TabIndex = 5;
+            this.btn_HomNay.Text = "Hôm nay";
+            this.btn_HomNay.UseVisualStyleBackColor = true;
+            this.btn_HomNay.Click += new System.EventHandler(this.btn_HomNay_Click);
+            // 
+            // btn_TinhLaiThanhTien
+            // 
+            this.btn_TinhLaiThanhTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_TinhLaiThanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TinhLaiThanhTien.Location = new System.Drawing.Point(577, 112);
+            this.btn_TinhLaiThanhTien.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_TinhLaiThanhTien.Name = "btn_TinhLaiThanhTien";
+            this.btn_TinhLaiThanhTien.Size = new System.Drawing.Size(222, 34);
+            this.btn_TinhLaiThanhTien.TabIndex = 5;
+            this.btn_TinhLaiThanhTien.Text = "Tính thành tiền";
+            this.btn_TinhLaiThanhTien.UseVisualStyleBackColor = false;
+            this.btn_TinhLaiThanhTien.Click += new System.EventHandler(this.btn_TinhLaiThanhTien_Click);
+            // 
+            // btn_ThanhToan
+            // 
+            this.btn_ThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_ThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThanhToan.Location = new System.Drawing.Point(816, 113);
+            this.btn_ThanhToan.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ThanhToan.Name = "btn_ThanhToan";
+            this.btn_ThanhToan.Size = new System.Drawing.Size(139, 34);
+            this.btn_ThanhToan.TabIndex = 6;
+            this.btn_ThanhToan.Text = "Thanh toán";
+            this.btn_ThanhToan.UseVisualStyleBackColor = false;
+            this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
             // 
             // label3
             // 
@@ -445,7 +483,7 @@
             this.pnl_Main.Location = new System.Drawing.Point(0, 0);
             this.pnl_Main.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Main.Name = "pnl_Main";
-            this.pnl_Main.Size = new System.Drawing.Size(1956, 893);
+            this.pnl_Main.Size = new System.Drawing.Size(1924, 893);
             this.pnl_Main.TabIndex = 1;
             // 
             // pnl_ChiTietPhieuMuon
@@ -456,7 +494,7 @@
             this.pnl_ChiTietPhieuMuon.Location = new System.Drawing.Point(983, 468);
             this.pnl_ChiTietPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ChiTietPhieuMuon.Name = "pnl_ChiTietPhieuMuon";
-            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(973, 425);
+            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(941, 425);
             this.pnl_ChiTietPhieuMuon.TabIndex = 2;
             // 
             // lbl_ChiTietPhieuMuon
@@ -492,44 +530,6 @@
             this.dgv_ChiTietPhieuMuon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ChiTietPhieuMuon.Size = new System.Drawing.Size(990, 428);
             this.dgv_ChiTietPhieuMuon.TabIndex = 1;
-            // 
-            // btn_TinhLaiThanhTien
-            // 
-            this.btn_TinhLaiThanhTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_TinhLaiThanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TinhLaiThanhTien.Location = new System.Drawing.Point(577, 112);
-            this.btn_TinhLaiThanhTien.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_TinhLaiThanhTien.Name = "btn_TinhLaiThanhTien";
-            this.btn_TinhLaiThanhTien.Size = new System.Drawing.Size(222, 34);
-            this.btn_TinhLaiThanhTien.TabIndex = 5;
-            this.btn_TinhLaiThanhTien.Text = "Tính thành tiền";
-            this.btn_TinhLaiThanhTien.UseVisualStyleBackColor = false;
-            this.btn_TinhLaiThanhTien.Click += new System.EventHandler(this.btn_TinhLaiThanhTien_Click);
-            // 
-            // btn_ThanhToan
-            // 
-            this.btn_ThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_ThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThanhToan.Location = new System.Drawing.Point(816, 113);
-            this.btn_ThanhToan.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ThanhToan.Name = "btn_ThanhToan";
-            this.btn_ThanhToan.Size = new System.Drawing.Size(139, 34);
-            this.btn_ThanhToan.TabIndex = 6;
-            this.btn_ThanhToan.Text = "Thanh toán";
-            this.btn_ThanhToan.UseVisualStyleBackColor = false;
-            this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
-            // 
-            // btn_HomNay
-            // 
-            this.btn_HomNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_HomNay.Location = new System.Drawing.Point(473, 260);
-            this.btn_HomNay.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_HomNay.Name = "btn_HomNay";
-            this.btn_HomNay.Size = new System.Drawing.Size(107, 34);
-            this.btn_HomNay.TabIndex = 5;
-            this.btn_HomNay.Text = "Hôm nay";
-            this.btn_HomNay.UseVisualStyleBackColor = true;
-            this.btn_HomNay.Click += new System.EventHandler(this.btn_HomNay_Click);
             // 
             // col_MaSach
             // 
@@ -583,7 +583,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1956, 893);
+            this.ClientSize = new System.Drawing.Size(1924, 893);
             this.Controls.Add(this.pnl_Main);
             this.Name = "frm_XuatHoaDon";
             this.Text = "frm_XuatHoaDon";
