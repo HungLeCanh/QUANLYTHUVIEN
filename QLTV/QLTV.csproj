@@ -128,6 +128,18 @@
     <Compile Include="frm_DanhSachDocGia.Designer.cs">
       <DependentUpon>frm_DanhSachDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_DanhSachPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DanhSachPhieuMuon.Designer.cs">
+      <DependentUpon>frm_DanhSachPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HoaDonThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HoaDonThanhToan.Designer.cs">
+      <DependentUpon>frm_HoaDonThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +176,12 @@
     <Compile Include="frm_TrangThaiSach.Designer.cs">
       <DependentUpon>frm_TrangThaiSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_XuatHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_XuatHoaDon.Designer.cs">
+      <DependentUpon>frm_XuatHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoaDon.cs" />
     <Compile Include="PhieuMuon.cs" />
     <Compile Include="Program.cs" />
@@ -179,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_DanhSachDocGia.resx">
       <DependentUpon>frm_DanhSachDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DanhSachPhieuMuon.resx">
+      <DependentUpon>frm_DanhSachPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_HoaDonThanhToan.resx">
+      <DependentUpon>frm_HoaDonThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
@@ -197,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TrangThaiSach.resx">
       <DependentUpon>frm_TrangThaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_XuatHoaDon.resx">
+      <DependentUpon>frm_XuatHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
