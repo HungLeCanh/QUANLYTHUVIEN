@@ -103,17 +103,17 @@ namespace QLTV
             this.pnl_TimKiem.Location = new System.Drawing.Point(983, 0);
             this.pnl_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_TimKiem.Name = "pnl_TimKiem";
-            this.pnl_TimKiem.Size = new System.Drawing.Size(973, 66);
+            this.pnl_TimKiem.Size = new System.Drawing.Size(941, 66);
             this.pnl_TimKiem.TabIndex = 0;
             // 
             // lbl_TimKiem
             // 
             this.lbl_TimKiem.AutoSize = true;
-            this.lbl_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TimKiem.Location = new System.Drawing.Point(16, 25);
+            this.lbl_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TimKiem.Location = new System.Drawing.Point(8, 18);
             this.lbl_TimKiem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TimKiem.Name = "lbl_TimKiem";
-            this.lbl_TimKiem.Size = new System.Drawing.Size(157, 20);
+            this.lbl_TimKiem.Size = new System.Drawing.Size(245, 29);
             this.lbl_TimKiem.TabIndex = 0;
             this.lbl_TimKiem.Text = "Tìm kiếm theo SĐT:";
             // 
@@ -304,7 +304,7 @@ namespace QLTV
             this.pnl_ThongTin.Location = new System.Drawing.Point(983, 66);
             this.pnl_ThongTin.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ThongTin.Name = "pnl_ThongTin";
-            this.pnl_ThongTin.Size = new System.Drawing.Size(973, 349);
+            this.pnl_ThongTin.Size = new System.Drawing.Size(941, 349);
             this.pnl_ThongTin.TabIndex = 3;
             // 
             // btn_HomNay
@@ -360,11 +360,11 @@ namespace QLTV
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(573, 69);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
+            this.label2.Size = new System.Drawing.Size(132, 29);
             this.label2.TabIndex = 13;
             this.label2.Text = "Thành tiền:";
             // 
@@ -382,11 +382,11 @@ namespace QLTV
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(16, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.Size = new System.Drawing.Size(198, 29);
             this.label1.TabIndex = 11;
             this.label1.Text = "Mã phiếu mượn:";
             // 
@@ -414,11 +414,11 @@ namespace QLTV
             // lbl_SoDienThoai
             // 
             this.lbl_SoDienThoai.AutoSize = true;
-            this.lbl_SoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_SoDienThoai.Location = new System.Drawing.Point(16, 120);
             this.lbl_SoDienThoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_SoDienThoai.Name = "lbl_SoDienThoai";
-            this.lbl_SoDienThoai.Size = new System.Drawing.Size(111, 20);
+            this.lbl_SoDienThoai.Size = new System.Drawing.Size(174, 29);
             this.lbl_SoDienThoai.TabIndex = 1;
             this.lbl_SoDienThoai.Text = "Số điện thoại:";
             // 
@@ -435,11 +435,11 @@ namespace QLTV
             // lbl_NgayMuon
             // 
             this.lbl_NgayMuon.AutoSize = true;
-            this.lbl_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NgayMuon.Location = new System.Drawing.Point(16, 169);
             this.lbl_NgayMuon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NgayMuon.Name = "lbl_NgayMuon";
-            this.lbl_NgayMuon.Size = new System.Drawing.Size(98, 20);
+            this.lbl_NgayMuon.Size = new System.Drawing.Size(151, 29);
             this.lbl_NgayMuon.TabIndex = 3;
             this.lbl_NgayMuon.Text = "Ngày mượn:";
             // 
@@ -456,11 +456,11 @@ namespace QLTV
             // lbl_NgayTraDuKien
             // 
             this.lbl_NgayTraDuKien.AutoSize = true;
-            this.lbl_NgayTraDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTraDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NgayTraDuKien.Location = new System.Drawing.Point(16, 218);
             this.lbl_NgayTraDuKien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NgayTraDuKien.Name = "lbl_NgayTraDuKien";
-            this.lbl_NgayTraDuKien.Size = new System.Drawing.Size(135, 20);
+            this.lbl_NgayTraDuKien.Size = new System.Drawing.Size(209, 29);
             this.lbl_NgayTraDuKien.TabIndex = 5;
             this.lbl_NgayTraDuKien.Text = "Ngày trả dự kiến:";
             // 
@@ -477,11 +477,11 @@ namespace QLTV
             // lbl_NgayTraThucTe
             // 
             this.lbl_NgayTraThucTe.AutoSize = true;
-            this.lbl_NgayTraThucTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTraThucTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NgayTraThucTe.Location = new System.Drawing.Point(16, 267);
             this.lbl_NgayTraThucTe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NgayTraThucTe.Name = "lbl_NgayTraThucTe";
-            this.lbl_NgayTraThucTe.Size = new System.Drawing.Size(133, 20);
+            this.lbl_NgayTraThucTe.Size = new System.Drawing.Size(201, 29);
             this.lbl_NgayTraThucTe.TabIndex = 7;
             this.lbl_NgayTraThucTe.Text = "Ngày trả thực tế:";
             // 
@@ -497,11 +497,11 @@ namespace QLTV
             // lbl_TrangThai
             // 
             this.lbl_TrangThai.AutoSize = true;
-            this.lbl_TrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TrangThai.Location = new System.Drawing.Point(16, 316);
             this.lbl_TrangThai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TrangThai.Name = "lbl_TrangThai";
-            this.lbl_TrangThai.Size = new System.Drawing.Size(89, 20);
+            this.lbl_TrangThai.Size = new System.Drawing.Size(138, 29);
             this.lbl_TrangThai.TabIndex = 9;
             this.lbl_TrangThai.Text = "Trạng thái:";
             // 
@@ -530,7 +530,7 @@ namespace QLTV
             this.pnl_Main.Location = new System.Drawing.Point(0, 80);
             this.pnl_Main.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Main.Name = "pnl_Main";
-            this.pnl_Main.Size = new System.Drawing.Size(1956, 813);
+            this.pnl_Main.Size = new System.Drawing.Size(1924, 813);
             this.pnl_Main.TabIndex = 1;
             // 
             // pnl_ChiTietPhieuMuon
@@ -541,7 +541,7 @@ namespace QLTV
             this.pnl_ChiTietPhieuMuon.Location = new System.Drawing.Point(983, 415);
             this.pnl_ChiTietPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ChiTietPhieuMuon.Name = "pnl_ChiTietPhieuMuon";
-            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(973, 398);
+            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(941, 398);
             this.pnl_ChiTietPhieuMuon.TabIndex = 2;
             // 
             // lbl_ChiTietPhieuMuon
@@ -597,7 +597,7 @@ namespace QLTV
             this.dgv_ChiTietPhieuMuon.RowHeadersVisible = false;
             this.dgv_ChiTietPhieuMuon.RowHeadersWidth = 51;
             this.dgv_ChiTietPhieuMuon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ChiTietPhieuMuon.Size = new System.Drawing.Size(973, 358);
+            this.dgv_ChiTietPhieuMuon.Size = new System.Drawing.Size(941, 358);
             this.dgv_ChiTietPhieuMuon.TabIndex = 1;
             // 
             // col_MaSach
@@ -655,7 +655,7 @@ namespace QLTV
             this.pnl_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Header.Location = new System.Drawing.Point(0, 0);
             this.pnl_Header.Name = "pnl_Header";
-            this.pnl_Header.Size = new System.Drawing.Size(1956, 80);
+            this.pnl_Header.Size = new System.Drawing.Size(1924, 80);
             this.pnl_Header.TabIndex = 2;
             // 
             // frm_XuatHoaDon

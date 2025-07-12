@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyleHeader = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_danhSachDocGia = new System.Windows.Forms.DataGridView();
             this.col_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_hoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,14 +69,14 @@
             this.dgv_danhSachDocGia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_danhSachDocGia.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_danhSachDocGia.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyleHeader.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyleHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyleHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyleHeader.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyleHeader.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyleHeader.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyleHeader.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_danhSachDocGia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyleHeader;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_danhSachDocGia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_danhSachDocGia.ColumnHeadersHeight = 40;
             this.dgv_danhSachDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_danhSachDocGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -281,10 +280,10 @@
             // 
             this.lbl_SoDienThoai.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_SoDienThoai.AutoSize = true;
-            this.lbl_SoDienThoai.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lbl_SoDienThoai.Location = new System.Drawing.Point(21, 8);
+            this.lbl_SoDienThoai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SoDienThoai.Location = new System.Drawing.Point(10, 8);
             this.lbl_SoDienThoai.Name = "lbl_SoDienThoai";
-            this.lbl_SoDienThoai.Size = new System.Drawing.Size(134, 28);
+            this.lbl_SoDienThoai.Size = new System.Drawing.Size(145, 28);
             this.lbl_SoDienThoai.TabIndex = 0;
             this.lbl_SoDienThoai.Text = "Số Điện thoại:";
             // 
@@ -302,10 +301,10 @@
             // 
             this.lbl_HoTen.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_HoTen.AutoSize = true;
-            this.lbl_HoTen.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lbl_HoTen.Location = new System.Drawing.Point(608, 8);
+            this.lbl_HoTen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_HoTen.Location = new System.Drawing.Point(602, 8);
             this.lbl_HoTen.Name = "lbl_HoTen";
-            this.lbl_HoTen.Size = new System.Drawing.Size(75, 28);
+            this.lbl_HoTen.Size = new System.Drawing.Size(81, 28);
             this.lbl_HoTen.TabIndex = 2;
             this.lbl_HoTen.Text = "Họ tên:";
             // 
@@ -322,10 +321,10 @@
             // 
             this.lbl_DiaChi.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_DiaChi.AutoSize = true;
-            this.lbl_DiaChi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lbl_DiaChi.Location = new System.Drawing.Point(80, 53);
+            this.lbl_DiaChi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DiaChi.Location = new System.Drawing.Point(72, 53);
             this.lbl_DiaChi.Name = "lbl_DiaChi";
-            this.lbl_DiaChi.Size = new System.Drawing.Size(75, 28);
+            this.lbl_DiaChi.Size = new System.Drawing.Size(83, 28);
             this.lbl_DiaChi.TabIndex = 4;
             this.lbl_DiaChi.Text = "Địa chỉ:";
             // 
@@ -342,10 +341,10 @@
             // 
             this.lbl_Email.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_Email.AutoSize = true;
-            this.lbl_Email.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lbl_Email.Location = new System.Drawing.Point(620, 53);
+            this.lbl_Email.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Email.Location = new System.Drawing.Point(614, 53);
             this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(63, 28);
+            this.lbl_Email.Size = new System.Drawing.Size(69, 28);
             this.lbl_Email.TabIndex = 6;
             this.lbl_Email.Text = "Email:";
             // 

@@ -63,10 +63,10 @@
             // lbl_SoNgayMuon
             // 
             this.lbl_SoNgayMuon.AutoSize = true;
-            this.lbl_SoNgayMuon.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lbl_SoNgayMuon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_SoNgayMuon.Location = new System.Drawing.Point(30, 40);
             this.lbl_SoNgayMuon.Name = "lbl_SoNgayMuon";
-            this.lbl_SoNgayMuon.Size = new System.Drawing.Size(139, 23);
+            this.lbl_SoNgayMuon.Size = new System.Drawing.Size(160, 28);
             this.lbl_SoNgayMuon.TabIndex = 2;
             this.lbl_SoNgayMuon.Text = "Số ngày mượn: 0";
             // 

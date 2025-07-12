@@ -38,26 +38,26 @@ namespace QLTV
             this.lbl_DanhSachPhieuMuon = new System.Windows.Forms.Label();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_ThongTin = new System.Windows.Forms.Panel();
+            this.btn_Clear = new System.Windows.Forms.Button();
+            this.btn_Xoa = new System.Windows.Forms.Button();
+            this.btn_Sua = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.txt_GhiChu = new System.Windows.Forms.TextBox();
+            this.lbl_GhiChu = new System.Windows.Forms.Label();
+            this.txt_NgayThanhToan = new System.Windows.Forms.TextBox();
+            this.lbl_NgayThanhToan = new System.Windows.Forms.Label();
+            this.txt_NgayTaoHoaDon = new System.Windows.Forms.TextBox();
+            this.lbl_NgayTaoHD = new System.Windows.Forms.Label();
+            this.txt_TongThanhToan = new System.Windows.Forms.TextBox();
+            this.lbl_TongThanhToan = new System.Windows.Forms.Label();
+            this.txt_TongTien = new System.Windows.Forms.TextBox();
+            this.lbl_CanThanhToan = new System.Windows.Forms.Label();
+            this.txt_MaPhieuMuon = new System.Windows.Forms.TextBox();
+            this.lnl_MaPhieuMuon = new System.Windows.Forms.Label();
+            this.txt_MaHoaDon = new System.Windows.Forms.TextBox();
+            this.lbl_MaHoaDon = new System.Windows.Forms.Label();
             this.pnl_DanhSachHoaDon = new System.Windows.Forms.Panel();
             this.dgv_DanhSachHoaDon = new System.Windows.Forms.DataGridView();
-            this.lbl_MaHoaDon = new System.Windows.Forms.Label();
-            this.btn_Clear = new System.Windows.Forms.Button();
-            this.lnl_MaPhieuMuon = new System.Windows.Forms.Label();
-            this.txt_MaPhieuMuon = new System.Windows.Forms.TextBox();
-            this.lbl_CanThanhToan = new System.Windows.Forms.Label();
-            this.txt_TongTien = new System.Windows.Forms.TextBox();
-            this.lbl_TongThanhToan = new System.Windows.Forms.Label();
-            this.txt_TongThanhToan = new System.Windows.Forms.TextBox();
-            this.lbl_NgayTaoHD = new System.Windows.Forms.Label();
-            this.txt_NgayTaoHoaDon = new System.Windows.Forms.TextBox();
-            this.lbl_NgayThanhToan = new System.Windows.Forms.Label();
-            this.txt_NgayThanhToan = new System.Windows.Forms.TextBox();
-            this.lbl_GhiChu = new System.Windows.Forms.Label();
-            this.txt_GhiChu = new System.Windows.Forms.TextBox();
-            this.btn_Sua = new System.Windows.Forms.Button();
-            this.btn_Xoa = new System.Windows.Forms.Button();
-            this.txt_MaHoaDon = new System.Windows.Forms.TextBox();
             this.col_MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_MaPhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,7 +80,7 @@ namespace QLTV
             this.pnl_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Header.Location = new System.Drawing.Point(0, 0);
             this.pnl_Header.Name = "pnl_Header";
-            this.pnl_Header.Size = new System.Drawing.Size(1973, 80);
+            this.pnl_Header.Size = new System.Drawing.Size(1924, 80);
             this.pnl_Header.TabIndex = 3;
             // 
             // lbl_DanhSachPhieuMuon
@@ -102,7 +102,7 @@ namespace QLTV
             this.pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Main.Location = new System.Drawing.Point(0, 80);
             this.pnl_Main.Name = "pnl_Main";
-            this.pnl_Main.Size = new System.Drawing.Size(1973, 966);
+            this.pnl_Main.Size = new System.Drawing.Size(1924, 966);
             this.pnl_Main.TabIndex = 4;
             // 
             // pnl_ThongTin
@@ -128,8 +128,41 @@ namespace QLTV
             this.pnl_ThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_ThongTin.Location = new System.Drawing.Point(1203, 0);
             this.pnl_ThongTin.Name = "pnl_ThongTin";
-            this.pnl_ThongTin.Size = new System.Drawing.Size(770, 966);
+            this.pnl_ThongTin.Size = new System.Drawing.Size(721, 966);
             this.pnl_ThongTin.TabIndex = 1;
+            // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Clear.Location = new System.Drawing.Point(323, 396);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(104, 42);
+            this.btn_Clear.TabIndex = 17;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.UseVisualStyleBackColor = true;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Xoa.Location = new System.Drawing.Point(192, 396);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(104, 42);
+            this.btn_Xoa.TabIndex = 16;
+            this.btn_Xoa.Text = "Xoá";
+            this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sua.Location = new System.Drawing.Point(65, 396);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(104, 42);
+            this.btn_Sua.TabIndex = 15;
+            this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // label8
             // 
@@ -142,6 +175,138 @@ namespace QLTV
             this.label8.Size = new System.Drawing.Size(259, 41);
             this.label8.TabIndex = 1;
             this.label8.Text = "Chi Tiết Hoá Đơn";
+            // 
+            // txt_GhiChu
+            // 
+            this.txt_GhiChu.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_GhiChu.Location = new System.Drawing.Point(206, 333);
+            this.txt_GhiChu.Name = "txt_GhiChu";
+            this.txt_GhiChu.Size = new System.Drawing.Size(219, 30);
+            this.txt_GhiChu.TabIndex = 14;
+            // 
+            // lbl_GhiChu
+            // 
+            this.lbl_GhiChu.AutoSize = true;
+            this.lbl_GhiChu.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_GhiChu.Location = new System.Drawing.Point(31, 337);
+            this.lbl_GhiChu.Name = "lbl_GhiChu";
+            this.lbl_GhiChu.Size = new System.Drawing.Size(80, 22);
+            this.lbl_GhiChu.TabIndex = 13;
+            this.lbl_GhiChu.Text = "Ghi Chú:";
+            // 
+            // txt_NgayThanhToan
+            // 
+            this.txt_NgayThanhToan.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NgayThanhToan.Location = new System.Drawing.Point(206, 291);
+            this.txt_NgayThanhToan.Name = "txt_NgayThanhToan";
+            this.txt_NgayThanhToan.ReadOnly = true;
+            this.txt_NgayThanhToan.Size = new System.Drawing.Size(219, 30);
+            this.txt_NgayThanhToan.TabIndex = 12;
+            // 
+            // lbl_NgayThanhToan
+            // 
+            this.lbl_NgayThanhToan.AutoSize = true;
+            this.lbl_NgayThanhToan.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayThanhToan.Location = new System.Drawing.Point(31, 295);
+            this.lbl_NgayThanhToan.Name = "lbl_NgayThanhToan";
+            this.lbl_NgayThanhToan.Size = new System.Drawing.Size(161, 22);
+            this.lbl_NgayThanhToan.TabIndex = 11;
+            this.lbl_NgayThanhToan.Text = "Ngày Thanh Toán:";
+            // 
+            // txt_NgayTaoHoaDon
+            // 
+            this.txt_NgayTaoHoaDon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NgayTaoHoaDon.Location = new System.Drawing.Point(206, 247);
+            this.txt_NgayTaoHoaDon.Name = "txt_NgayTaoHoaDon";
+            this.txt_NgayTaoHoaDon.ReadOnly = true;
+            this.txt_NgayTaoHoaDon.Size = new System.Drawing.Size(219, 30);
+            this.txt_NgayTaoHoaDon.TabIndex = 10;
+            // 
+            // lbl_NgayTaoHD
+            // 
+            this.lbl_NgayTaoHD.AutoSize = true;
+            this.lbl_NgayTaoHD.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTaoHD.Location = new System.Drawing.Point(31, 251);
+            this.lbl_NgayTaoHD.Name = "lbl_NgayTaoHD";
+            this.lbl_NgayTaoHD.Size = new System.Drawing.Size(123, 22);
+            this.lbl_NgayTaoHD.TabIndex = 9;
+            this.lbl_NgayTaoHD.Text = "Ngày Tạo HĐ:";
+            // 
+            // txt_TongThanhToan
+            // 
+            this.txt_TongThanhToan.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TongThanhToan.Location = new System.Drawing.Point(206, 205);
+            this.txt_TongThanhToan.Name = "txt_TongThanhToan";
+            this.txt_TongThanhToan.ReadOnly = true;
+            this.txt_TongThanhToan.Size = new System.Drawing.Size(219, 30);
+            this.txt_TongThanhToan.TabIndex = 8;
+            // 
+            // lbl_TongThanhToan
+            // 
+            this.lbl_TongThanhToan.AutoSize = true;
+            this.lbl_TongThanhToan.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TongThanhToan.Location = new System.Drawing.Point(31, 209);
+            this.lbl_TongThanhToan.Name = "lbl_TongThanhToan";
+            this.lbl_TongThanhToan.Size = new System.Drawing.Size(159, 22);
+            this.lbl_TongThanhToan.TabIndex = 7;
+            this.lbl_TongThanhToan.Text = "Tổng Thanh Toán:";
+            // 
+            // txt_TongTien
+            // 
+            this.txt_TongTien.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TongTien.Location = new System.Drawing.Point(206, 159);
+            this.txt_TongTien.Name = "txt_TongTien";
+            this.txt_TongTien.ReadOnly = true;
+            this.txt_TongTien.Size = new System.Drawing.Size(219, 30);
+            this.txt_TongTien.TabIndex = 6;
+            // 
+            // lbl_CanThanhToan
+            // 
+            this.lbl_CanThanhToan.AutoSize = true;
+            this.lbl_CanThanhToan.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CanThanhToan.Location = new System.Drawing.Point(31, 163);
+            this.lbl_CanThanhToan.Name = "lbl_CanThanhToan";
+            this.lbl_CanThanhToan.Size = new System.Drawing.Size(149, 22);
+            this.lbl_CanThanhToan.TabIndex = 5;
+            this.lbl_CanThanhToan.Text = "Cần Thanh Toán:";
+            // 
+            // txt_MaPhieuMuon
+            // 
+            this.txt_MaPhieuMuon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaPhieuMuon.Location = new System.Drawing.Point(206, 116);
+            this.txt_MaPhieuMuon.Name = "txt_MaPhieuMuon";
+            this.txt_MaPhieuMuon.ReadOnly = true;
+            this.txt_MaPhieuMuon.Size = new System.Drawing.Size(219, 30);
+            this.txt_MaPhieuMuon.TabIndex = 4;
+            // 
+            // lnl_MaPhieuMuon
+            // 
+            this.lnl_MaPhieuMuon.AutoSize = true;
+            this.lnl_MaPhieuMuon.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnl_MaPhieuMuon.Location = new System.Drawing.Point(31, 120);
+            this.lnl_MaPhieuMuon.Name = "lnl_MaPhieuMuon";
+            this.lnl_MaPhieuMuon.Size = new System.Drawing.Size(145, 22);
+            this.lnl_MaPhieuMuon.TabIndex = 3;
+            this.lnl_MaPhieuMuon.Text = "Mã Phiếu Mượn:";
+            // 
+            // txt_MaHoaDon
+            // 
+            this.txt_MaHoaDon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaHoaDon.Location = new System.Drawing.Point(206, 74);
+            this.txt_MaHoaDon.Name = "txt_MaHoaDon";
+            this.txt_MaHoaDon.ReadOnly = true;
+            this.txt_MaHoaDon.Size = new System.Drawing.Size(219, 30);
+            this.txt_MaHoaDon.TabIndex = 2;
+            // 
+            // lbl_MaHoaDon
+            // 
+            this.lbl_MaHoaDon.AutoSize = true;
+            this.lbl_MaHoaDon.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MaHoaDon.Location = new System.Drawing.Point(31, 78);
+            this.lbl_MaHoaDon.Name = "lbl_MaHoaDon";
+            this.lbl_MaHoaDon.Size = new System.Drawing.Size(117, 22);
+            this.lbl_MaHoaDon.TabIndex = 1;
+            this.lbl_MaHoaDon.Text = "Mã Hoá Đơn:";
             // 
             // pnl_DanhSachHoaDon
             // 
@@ -199,171 +364,6 @@ namespace QLTV
             this.dgv_DanhSachHoaDon.Size = new System.Drawing.Size(1203, 966);
             this.dgv_DanhSachHoaDon.TabIndex = 0;
             this.dgv_DanhSachHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DanhSachHoaDon_CellClick);
-            // 
-            // lbl_MaHoaDon
-            // 
-            this.lbl_MaHoaDon.AutoSize = true;
-            this.lbl_MaHoaDon.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MaHoaDon.Location = new System.Drawing.Point(31, 78);
-            this.lbl_MaHoaDon.Name = "lbl_MaHoaDon";
-            this.lbl_MaHoaDon.Size = new System.Drawing.Size(117, 22);
-            this.lbl_MaHoaDon.TabIndex = 1;
-            this.lbl_MaHoaDon.Text = "Mã Hoá Đơn:";
-            // 
-            // btn_Clear
-            // 
-            this.btn_Clear.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Clear.Location = new System.Drawing.Point(323, 396);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(104, 42);
-            this.btn_Clear.TabIndex = 17;
-            this.btn_Clear.Text = "Clear";
-            this.btn_Clear.UseVisualStyleBackColor = true;
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
-            // 
-            // lnl_MaPhieuMuon
-            // 
-            this.lnl_MaPhieuMuon.AutoSize = true;
-            this.lnl_MaPhieuMuon.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnl_MaPhieuMuon.Location = new System.Drawing.Point(31, 120);
-            this.lnl_MaPhieuMuon.Name = "lnl_MaPhieuMuon";
-            this.lnl_MaPhieuMuon.Size = new System.Drawing.Size(145, 22);
-            this.lnl_MaPhieuMuon.TabIndex = 3;
-            this.lnl_MaPhieuMuon.Text = "Mã Phiếu Mượn:";
-            // 
-            // txt_MaPhieuMuon
-            // 
-            this.txt_MaPhieuMuon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaPhieuMuon.Location = new System.Drawing.Point(206, 116);
-            this.txt_MaPhieuMuon.Name = "txt_MaPhieuMuon";
-            this.txt_MaPhieuMuon.ReadOnly = true;
-            this.txt_MaPhieuMuon.Size = new System.Drawing.Size(219, 30);
-            this.txt_MaPhieuMuon.TabIndex = 4;
-            // 
-            // lbl_CanThanhToan
-            // 
-            this.lbl_CanThanhToan.AutoSize = true;
-            this.lbl_CanThanhToan.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CanThanhToan.Location = new System.Drawing.Point(31, 163);
-            this.lbl_CanThanhToan.Name = "lbl_CanThanhToan";
-            this.lbl_CanThanhToan.Size = new System.Drawing.Size(149, 22);
-            this.lbl_CanThanhToan.TabIndex = 5;
-            this.lbl_CanThanhToan.Text = "Cần Thanh Toán:";
-            // 
-            // txt_TongTien
-            // 
-            this.txt_TongTien.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TongTien.Location = new System.Drawing.Point(206, 159);
-            this.txt_TongTien.Name = "txt_TongTien";
-            this.txt_TongTien.ReadOnly = true;
-            this.txt_TongTien.Size = new System.Drawing.Size(219, 30);
-            this.txt_TongTien.TabIndex = 6;
-            // 
-            // lbl_TongThanhToan
-            // 
-            this.lbl_TongThanhToan.AutoSize = true;
-            this.lbl_TongThanhToan.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TongThanhToan.Location = new System.Drawing.Point(31, 209);
-            this.lbl_TongThanhToan.Name = "lbl_TongThanhToan";
-            this.lbl_TongThanhToan.Size = new System.Drawing.Size(159, 22);
-            this.lbl_TongThanhToan.TabIndex = 7;
-            this.lbl_TongThanhToan.Text = "Tổng Thanh Toán:";
-            // 
-            // txt_TongThanhToan
-            // 
-            this.txt_TongThanhToan.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TongThanhToan.Location = new System.Drawing.Point(206, 205);
-            this.txt_TongThanhToan.Name = "txt_TongThanhToan";
-            this.txt_TongThanhToan.ReadOnly = true;
-            this.txt_TongThanhToan.Size = new System.Drawing.Size(219, 30);
-            this.txt_TongThanhToan.TabIndex = 8;
-            // 
-            // lbl_NgayTaoHD
-            // 
-            this.lbl_NgayTaoHD.AutoSize = true;
-            this.lbl_NgayTaoHD.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NgayTaoHD.Location = new System.Drawing.Point(31, 251);
-            this.lbl_NgayTaoHD.Name = "lbl_NgayTaoHD";
-            this.lbl_NgayTaoHD.Size = new System.Drawing.Size(123, 22);
-            this.lbl_NgayTaoHD.TabIndex = 9;
-            this.lbl_NgayTaoHD.Text = "Ngày Tạo HĐ:";
-            // 
-            // txt_NgayTaoHoaDon
-            // 
-            this.txt_NgayTaoHoaDon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayTaoHoaDon.Location = new System.Drawing.Point(206, 247);
-            this.txt_NgayTaoHoaDon.Name = "txt_NgayTaoHoaDon";
-            this.txt_NgayTaoHoaDon.ReadOnly = true;
-            this.txt_NgayTaoHoaDon.Size = new System.Drawing.Size(219, 30);
-            this.txt_NgayTaoHoaDon.TabIndex = 10;
-            // 
-            // lbl_NgayThanhToan
-            // 
-            this.lbl_NgayThanhToan.AutoSize = true;
-            this.lbl_NgayThanhToan.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NgayThanhToan.Location = new System.Drawing.Point(31, 295);
-            this.lbl_NgayThanhToan.Name = "lbl_NgayThanhToan";
-            this.lbl_NgayThanhToan.Size = new System.Drawing.Size(161, 22);
-            this.lbl_NgayThanhToan.TabIndex = 11;
-            this.lbl_NgayThanhToan.Text = "Ngày Thanh Toán:";
-            // 
-            // txt_NgayThanhToan
-            // 
-            this.txt_NgayThanhToan.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayThanhToan.Location = new System.Drawing.Point(206, 291);
-            this.txt_NgayThanhToan.Name = "txt_NgayThanhToan";
-            this.txt_NgayThanhToan.ReadOnly = true;
-            this.txt_NgayThanhToan.Size = new System.Drawing.Size(219, 30);
-            this.txt_NgayThanhToan.TabIndex = 12;
-            // 
-            // lbl_GhiChu
-            // 
-            this.lbl_GhiChu.AutoSize = true;
-            this.lbl_GhiChu.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_GhiChu.Location = new System.Drawing.Point(31, 337);
-            this.lbl_GhiChu.Name = "lbl_GhiChu";
-            this.lbl_GhiChu.Size = new System.Drawing.Size(80, 22);
-            this.lbl_GhiChu.TabIndex = 13;
-            this.lbl_GhiChu.Text = "Ghi Chú:";
-            // 
-            // txt_GhiChu
-            // 
-            this.txt_GhiChu.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_GhiChu.Location = new System.Drawing.Point(206, 333);
-            this.txt_GhiChu.Name = "txt_GhiChu";
-            this.txt_GhiChu.Size = new System.Drawing.Size(219, 30);
-            this.txt_GhiChu.TabIndex = 14;
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Sua.Location = new System.Drawing.Point(65, 396);
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(104, 42);
-            this.btn_Sua.TabIndex = 15;
-            this.btn_Sua.Text = "Sửa";
-            this.btn_Sua.UseVisualStyleBackColor = true;
-            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Xoa.Location = new System.Drawing.Point(192, 396);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(104, 42);
-            this.btn_Xoa.TabIndex = 16;
-            this.btn_Xoa.Text = "Xoá";
-            this.btn_Xoa.UseVisualStyleBackColor = true;
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
-            // txt_MaHoaDon
-            // 
-            this.txt_MaHoaDon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaHoaDon.Location = new System.Drawing.Point(206, 74);
-            this.txt_MaHoaDon.Name = "txt_MaHoaDon";
-            this.txt_MaHoaDon.ReadOnly = true;
-            this.txt_MaHoaDon.Size = new System.Drawing.Size(219, 30);
-            this.txt_MaHoaDon.TabIndex = 2;
             // 
             // col_MaHoaDon
             // 
@@ -426,7 +426,7 @@ namespace QLTV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1973, 1046);
+            this.ClientSize = new System.Drawing.Size(1924, 1046);
             this.Controls.Add(this.pnl_Main);
             this.Controls.Add(this.pnl_Header);
             this.Name = "frm_DanhSachHoaDon";

@@ -31,12 +31,12 @@ namespace QLTV
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_ThongTin = new System.Windows.Forms.Panel();
             this.lbl_ThongTinPhieu = new System.Windows.Forms.Label();
@@ -96,7 +96,7 @@ namespace QLTV
             this.pnl_Main.Location = new System.Drawing.Point(0, 78);
             this.pnl_Main.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Main.Name = "pnl_Main";
-            this.pnl_Main.Size = new System.Drawing.Size(1974, 907);
+            this.pnl_Main.Size = new System.Drawing.Size(1924, 907);
             this.pnl_Main.TabIndex = 0;
             // 
             // pnl_ThongTin
@@ -113,10 +113,12 @@ namespace QLTV
             this.pnl_ThongTin.Controls.Add(this.lbl_TrangThai);
             this.pnl_ThongTin.Controls.Add(this.cbo_TrangThai);
             this.pnl_ThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_ThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnl_ThongTin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnl_ThongTin.Location = new System.Drawing.Point(983, 74);
             this.pnl_ThongTin.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ThongTin.Name = "pnl_ThongTin";
-            this.pnl_ThongTin.Size = new System.Drawing.Size(991, 388);
+            this.pnl_ThongTin.Size = new System.Drawing.Size(941, 388);
             this.pnl_ThongTin.TabIndex = 3;
             // 
             // lbl_ThongTinPhieu
@@ -133,11 +135,12 @@ namespace QLTV
             // lbl_SoDienThoai
             // 
             this.lbl_SoDienThoai.AutoSize = true;
-            this.lbl_SoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SoDienThoai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_SoDienThoai.Location = new System.Drawing.Point(16, 62);
             this.lbl_SoDienThoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_SoDienThoai.Name = "lbl_SoDienThoai";
-            this.lbl_SoDienThoai.Size = new System.Drawing.Size(111, 20);
+            this.lbl_SoDienThoai.Size = new System.Drawing.Size(146, 25);
             this.lbl_SoDienThoai.TabIndex = 1;
             this.lbl_SoDienThoai.Text = "Số điện thoại:";
             // 
@@ -154,11 +157,12 @@ namespace QLTV
             // lbl_NgayMuon
             // 
             this.lbl_NgayMuon.AutoSize = true;
-            this.lbl_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayMuon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_NgayMuon.Location = new System.Drawing.Point(16, 111);
             this.lbl_NgayMuon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NgayMuon.Name = "lbl_NgayMuon";
-            this.lbl_NgayMuon.Size = new System.Drawing.Size(98, 20);
+            this.lbl_NgayMuon.Size = new System.Drawing.Size(128, 25);
             this.lbl_NgayMuon.TabIndex = 3;
             this.lbl_NgayMuon.Text = "Ngày mượn:";
             // 
@@ -175,11 +179,12 @@ namespace QLTV
             // lbl_NgayTraDuKien
             // 
             this.lbl_NgayTraDuKien.AutoSize = true;
-            this.lbl_NgayTraDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTraDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTraDuKien.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_NgayTraDuKien.Location = new System.Drawing.Point(16, 160);
             this.lbl_NgayTraDuKien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NgayTraDuKien.Name = "lbl_NgayTraDuKien";
-            this.lbl_NgayTraDuKien.Size = new System.Drawing.Size(135, 20);
+            this.lbl_NgayTraDuKien.Size = new System.Drawing.Size(176, 25);
             this.lbl_NgayTraDuKien.TabIndex = 5;
             this.lbl_NgayTraDuKien.Text = "Ngày trả dự kiến:";
             // 
@@ -196,11 +201,12 @@ namespace QLTV
             // lbl_NgayTraThucTe
             // 
             this.lbl_NgayTraThucTe.AutoSize = true;
-            this.lbl_NgayTraThucTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTraThucTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTraThucTe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_NgayTraThucTe.Location = new System.Drawing.Point(16, 209);
             this.lbl_NgayTraThucTe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NgayTraThucTe.Name = "lbl_NgayTraThucTe";
-            this.lbl_NgayTraThucTe.Size = new System.Drawing.Size(133, 20);
+            this.lbl_NgayTraThucTe.Size = new System.Drawing.Size(171, 25);
             this.lbl_NgayTraThucTe.TabIndex = 7;
             this.lbl_NgayTraThucTe.Text = "Ngày trả thực tế:";
             // 
@@ -217,11 +223,12 @@ namespace QLTV
             // lbl_TrangThai
             // 
             this.lbl_TrangThai.AutoSize = true;
-            this.lbl_TrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TrangThai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_TrangThai.Location = new System.Drawing.Point(16, 258);
             this.lbl_TrangThai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TrangThai.Name = "lbl_TrangThai";
-            this.lbl_TrangThai.Size = new System.Drawing.Size(89, 20);
+            this.lbl_TrangThai.Size = new System.Drawing.Size(117, 25);
             this.lbl_TrangThai.TabIndex = 9;
             this.lbl_TrangThai.Text = "Trạng thái:";
             // 
@@ -248,7 +255,7 @@ namespace QLTV
             this.pnl_ChiTietPhieuMuon.Location = new System.Drawing.Point(983, 462);
             this.pnl_ChiTietPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_ChiTietPhieuMuon.Name = "pnl_ChiTietPhieuMuon";
-            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(991, 445);
+            this.pnl_ChiTietPhieuMuon.Size = new System.Drawing.Size(941, 445);
             this.pnl_ChiTietPhieuMuon.TabIndex = 2;
             // 
             // lbl_ChiTietPhieuMuon
@@ -266,19 +273,19 @@ namespace QLTV
             // 
             this.dgv_ChiTietPhieuMuon.AllowUserToAddRows = false;
             this.dgv_ChiTietPhieuMuon.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dgv_ChiTietPhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgv_ChiTietPhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_ChiTietPhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_ChiTietPhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_ChiTietPhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ChiTietPhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_ChiTietPhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_ChiTietPhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ChiTietPhieuMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaChiTiet,
@@ -288,14 +295,14 @@ namespace QLTV
             this.col_DonGiaMuon,
             this.col_ThanhTien,
             this.col_TrangThaiSach});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ChiTietPhieuMuon.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ChiTietPhieuMuon.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_ChiTietPhieuMuon.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_ChiTietPhieuMuon.EnableHeadersVisualStyles = false;
             this.dgv_ChiTietPhieuMuon.Location = new System.Drawing.Point(0, 41);
@@ -306,7 +313,7 @@ namespace QLTV
             this.dgv_ChiTietPhieuMuon.RowHeadersVisible = false;
             this.dgv_ChiTietPhieuMuon.RowHeadersWidth = 51;
             this.dgv_ChiTietPhieuMuon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ChiTietPhieuMuon.Size = new System.Drawing.Size(991, 404);
+            this.dgv_ChiTietPhieuMuon.Size = new System.Drawing.Size(941, 404);
             this.dgv_ChiTietPhieuMuon.TabIndex = 1;
             // 
             // col_MaChiTiet
@@ -376,24 +383,25 @@ namespace QLTV
             this.pnl_TimKiem.Location = new System.Drawing.Point(983, 0);
             this.pnl_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_TimKiem.Name = "pnl_TimKiem";
-            this.pnl_TimKiem.Size = new System.Drawing.Size(991, 74);
+            this.pnl_TimKiem.Size = new System.Drawing.Size(941, 74);
             this.pnl_TimKiem.TabIndex = 0;
             // 
             // lbl_TimKiem
             // 
             this.lbl_TimKiem.AutoSize = true;
-            this.lbl_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TimKiem.Location = new System.Drawing.Point(16, 25);
+            this.lbl_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TimKiem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_TimKiem.Location = new System.Drawing.Point(9, 18);
             this.lbl_TimKiem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TimKiem.Name = "lbl_TimKiem";
-            this.lbl_TimKiem.Size = new System.Drawing.Size(157, 20);
+            this.lbl_TimKiem.Size = new System.Drawing.Size(204, 25);
             this.lbl_TimKiem.TabIndex = 0;
             this.lbl_TimKiem.Text = "Tìm kiếm theo SĐT:";
             // 
             // txt_TimKiem
             // 
             this.txt_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TimKiem.Location = new System.Drawing.Point(203, 21);
+            this.txt_TimKiem.Location = new System.Drawing.Point(221, 18);
             this.txt_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TimKiem.Name = "txt_TimKiem";
             this.txt_TimKiem.Size = new System.Drawing.Size(265, 26);
@@ -401,8 +409,8 @@ namespace QLTV
             // 
             // btn_TimKiem
             // 
-            this.btn_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiem.Location = new System.Drawing.Point(487, 18);
+            this.btn_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiem.Location = new System.Drawing.Point(558, 14);
             this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_TimKiem.Name = "btn_TimKiem";
             this.btn_TimKiem.Size = new System.Drawing.Size(107, 34);
@@ -413,8 +421,8 @@ namespace QLTV
             // 
             // btn_Refresh
             // 
-            this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(608, 18);
+            this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.Location = new System.Drawing.Point(679, 14);
             this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(107, 34);
@@ -449,19 +457,19 @@ namespace QLTV
             // 
             this.dgv_PhieuMuon.AllowUserToAddRows = false;
             this.dgv_PhieuMuon.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dgv_PhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgv_PhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_PhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_PhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_PhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_PhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_PhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_PhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_PhieuMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaPhieuMuon,
@@ -470,14 +478,14 @@ namespace QLTV
             this.col_NgayTraDuKien,
             this.col_NgayTraThucTe,
             this.col_TrangThaiPhieu});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_PhieuMuon.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_PhieuMuon.DefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_PhieuMuon.EnableHeadersVisualStyles = false;
             this.dgv_PhieuMuon.Location = new System.Drawing.Point(16, 41);
             this.dgv_PhieuMuon.Margin = new System.Windows.Forms.Padding(4);
@@ -546,7 +554,7 @@ namespace QLTV
             this.pnl_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Header.Location = new System.Drawing.Point(0, 0);
             this.pnl_Header.Name = "pnl_Header";
-            this.pnl_Header.Size = new System.Drawing.Size(1974, 78);
+            this.pnl_Header.Size = new System.Drawing.Size(1924, 78);
             this.pnl_Header.TabIndex = 2;
             // 
             // label1
@@ -565,7 +573,7 @@ namespace QLTV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1974, 985);
+            this.ClientSize = new System.Drawing.Size(1924, 985);
             this.Controls.Add(this.pnl_Main);
             this.Controls.Add(this.pnl_Header);
             this.Margin = new System.Windows.Forms.Padding(4);
