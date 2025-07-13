@@ -119,8 +119,9 @@
             // 
             // txt_SoDienThoai
             // 
+            this.txt_SoDienThoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_SoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SoDienThoai.Location = new System.Drawing.Point(174, 35);
+            this.txt_SoDienThoai.Location = new System.Drawing.Point(192, 35);
             this.txt_SoDienThoai.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SoDienThoai.Name = "txt_SoDienThoai";
             this.txt_SoDienThoai.Size = new System.Drawing.Size(265, 24);
@@ -129,7 +130,7 @@
             // btn_TimDocGia
             // 
             this.btn_TimDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimDocGia.Location = new System.Drawing.Point(501, 26);
+            this.btn_TimDocGia.Location = new System.Drawing.Point(490, 31);
             this.btn_TimDocGia.Margin = new System.Windows.Forms.Padding(4);
             this.btn_TimDocGia.Name = "btn_TimDocGia";
             this.btn_TimDocGia.Size = new System.Drawing.Size(107, 31);
@@ -151,8 +152,9 @@
             // 
             // txtHoTen
             // 
+            this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen.Location = new System.Drawing.Point(174, 82);
+            this.txtHoTen.Location = new System.Drawing.Point(192, 82);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.ReadOnly = true;
@@ -172,8 +174,9 @@
             // 
             // txt_Email
             // 
+            this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Email.Location = new System.Drawing.Point(174, 132);
+            this.txt_Email.Location = new System.Drawing.Point(192, 132);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.ReadOnly = true;
@@ -200,7 +203,7 @@
             // 
             this.lbl_NgayMuon.AutoSize = true;
             this.lbl_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NgayMuon.Location = new System.Drawing.Point(8, 57);
+            this.lbl_NgayMuon.Location = new System.Drawing.Point(4, 57);
             this.lbl_NgayMuon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NgayMuon.Name = "lbl_NgayMuon";
             this.lbl_NgayMuon.Size = new System.Drawing.Size(128, 25);
@@ -211,7 +214,7 @@
             // 
             this.dtp_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayMuon.Location = new System.Drawing.Point(187, 58);
+            this.dtp_NgayMuon.Location = new System.Drawing.Point(210, 58);
             this.dtp_NgayMuon.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_NgayMuon.Name = "dtp_NgayMuon";
             this.dtp_NgayMuon.Size = new System.Drawing.Size(199, 24);
@@ -232,7 +235,7 @@
             // 
             this.dtp_NgayTraDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgayTraDuKien.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayTraDuKien.Location = new System.Drawing.Point(187, 107);
+            this.dtp_NgayTraDuKien.Location = new System.Drawing.Point(210, 107);
             this.dtp_NgayTraDuKien.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_NgayTraDuKien.Name = "dtp_NgayTraDuKien";
             this.dtp_NgayTraDuKien.Size = new System.Drawing.Size(199, 24);
@@ -268,8 +271,9 @@
             // 
             // txt_TimKiem
             // 
+            this.txt_TimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TimKiem.Location = new System.Drawing.Point(285, 34);
+            this.txt_TimKiem.Location = new System.Drawing.Point(303, 34);
             this.txt_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TimKiem.Name = "txt_TimKiem";
             this.txt_TimKiem.Size = new System.Drawing.Size(332, 24);
@@ -278,7 +282,7 @@
             // btn_TimKiem
             // 
             this.btn_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiem.Location = new System.Drawing.Point(652, 31);
+            this.btn_TimKiem.Location = new System.Drawing.Point(670, 31);
             this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_TimKiem.Name = "btn_TimKiem";
             this.btn_TimKiem.Size = new System.Drawing.Size(107, 31);
@@ -459,6 +463,7 @@
             // 
             // txt_TongTien
             // 
+            this.txt_TongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_TongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TongTien.Location = new System.Drawing.Point(1000, 944);
             this.txt_TongTien.Margin = new System.Windows.Forms.Padding(4);

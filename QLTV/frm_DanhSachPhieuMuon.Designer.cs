@@ -31,12 +31,12 @@ namespace QLTV
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_ThongTin = new System.Windows.Forms.Panel();
             this.lbl_ThongTinPhieu = new System.Windows.Forms.Label();
@@ -146,8 +146,9 @@ namespace QLTV
             // 
             // txt_SoDienThoai
             // 
+            this.txt_SoDienThoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_SoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SoDienThoai.Location = new System.Drawing.Point(200, 58);
+            this.txt_SoDienThoai.Location = new System.Drawing.Point(229, 58);
             this.txt_SoDienThoai.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SoDienThoai.Name = "txt_SoDienThoai";
             this.txt_SoDienThoai.ReadOnly = true;
@@ -168,8 +169,9 @@ namespace QLTV
             // 
             // txt_NgayMuon
             // 
+            this.txt_NgayMuon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayMuon.Location = new System.Drawing.Point(200, 107);
+            this.txt_NgayMuon.Location = new System.Drawing.Point(229, 107);
             this.txt_NgayMuon.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NgayMuon.Name = "txt_NgayMuon";
             this.txt_NgayMuon.ReadOnly = true;
@@ -190,8 +192,9 @@ namespace QLTV
             // 
             // txt_NgayTraDuKien
             // 
+            this.txt_NgayTraDuKien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_NgayTraDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayTraDuKien.Location = new System.Drawing.Point(200, 156);
+            this.txt_NgayTraDuKien.Location = new System.Drawing.Point(229, 156);
             this.txt_NgayTraDuKien.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NgayTraDuKien.Name = "txt_NgayTraDuKien";
             this.txt_NgayTraDuKien.ReadOnly = true;
@@ -212,8 +215,9 @@ namespace QLTV
             // 
             // txt_NgayTraThucTe
             // 
+            this.txt_NgayTraThucTe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_NgayTraThucTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayTraThucTe.Location = new System.Drawing.Point(200, 206);
+            this.txt_NgayTraThucTe.Location = new System.Drawing.Point(229, 206);
             this.txt_NgayTraThucTe.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NgayTraThucTe.Name = "txt_NgayTraThucTe";
             this.txt_NgayTraThucTe.ReadOnly = true;
@@ -241,7 +245,7 @@ namespace QLTV
             "dang_muon",
             "da_tra",
             "qua_han"});
-            this.cbo_TrangThai.Location = new System.Drawing.Point(200, 255);
+            this.cbo_TrangThai.Location = new System.Drawing.Point(229, 255);
             this.cbo_TrangThai.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_TrangThai.Name = "cbo_TrangThai";
             this.cbo_TrangThai.Size = new System.Drawing.Size(265, 28);
@@ -273,19 +277,20 @@ namespace QLTV
             // 
             this.dgv_ChiTietPhieuMuon.AllowUserToAddRows = false;
             this.dgv_ChiTietPhieuMuon.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dgv_ChiTietPhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgv_ChiTietPhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_ChiTietPhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_ChiTietPhieuMuon.BackgroundColor = System.Drawing.Color.White;
             this.dgv_ChiTietPhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_ChiTietPhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ChiTietPhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_ChiTietPhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_ChiTietPhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ChiTietPhieuMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaChiTiet,
@@ -295,14 +300,14 @@ namespace QLTV
             this.col_DonGiaMuon,
             this.col_ThanhTien,
             this.col_TrangThaiSach});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ChiTietPhieuMuon.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ChiTietPhieuMuon.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_ChiTietPhieuMuon.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_ChiTietPhieuMuon.EnableHeadersVisualStyles = false;
             this.dgv_ChiTietPhieuMuon.Location = new System.Drawing.Point(0, 41);
@@ -457,19 +462,20 @@ namespace QLTV
             // 
             this.dgv_PhieuMuon.AllowUserToAddRows = false;
             this.dgv_PhieuMuon.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dgv_PhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgv_PhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_PhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_PhieuMuon.BackgroundColor = System.Drawing.Color.White;
             this.dgv_PhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_PhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_PhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_PhieuMuon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_PhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_PhieuMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaPhieuMuon,
@@ -478,14 +484,14 @@ namespace QLTV
             this.col_NgayTraDuKien,
             this.col_NgayTraThucTe,
             this.col_TrangThaiPhieu});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_PhieuMuon.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_PhieuMuon.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_PhieuMuon.EnableHeadersVisualStyles = false;
             this.dgv_PhieuMuon.Location = new System.Drawing.Point(16, 41);
             this.dgv_PhieuMuon.Margin = new System.Windows.Forms.Padding(4);

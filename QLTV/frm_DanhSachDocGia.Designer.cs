@@ -147,6 +147,7 @@
             // 
             this.btn_LamMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_LamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btn_LamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_LamMoi.FlatAppearance.BorderSize = 0;
             this.btn_LamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_LamMoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -164,6 +165,7 @@
             // 
             this.btn_Xoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btn_Xoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Xoa.FlatAppearance.BorderSize = 0;
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Xoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,6 +183,7 @@
             // 
             this.btn_Sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.btn_Sua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Sua.FlatAppearance.BorderSize = 0;
             this.btn_Sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -290,6 +293,7 @@
             // txt_SoDienThoai
             // 
             this.txt_SoDienThoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_SoDienThoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_SoDienThoai.Enabled = false;
             this.txt_SoDienThoai.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txt_SoDienThoai.Location = new System.Drawing.Point(161, 5);
@@ -311,6 +315,7 @@
             // txt_HoTen
             // 
             this.txt_HoTen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_HoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_HoTen.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txt_HoTen.Location = new System.Drawing.Point(689, 5);
             this.txt_HoTen.Name = "txt_HoTen";
@@ -331,6 +336,7 @@
             // txt_DiaChi
             // 
             this.txt_DiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_DiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_DiaChi.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txt_DiaChi.Location = new System.Drawing.Point(161, 50);
             this.txt_DiaChi.Name = "txt_DiaChi";
@@ -351,6 +357,7 @@
             // txt_Email
             // 
             this.txt_Email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txt_Email.Location = new System.Drawing.Point(689, 50);
             this.txt_Email.Name = "txt_Email";

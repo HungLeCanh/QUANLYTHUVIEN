@@ -31,9 +31,9 @@ namespace QLTV
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_Header = new System.Windows.Forms.Panel();
             this.lbl_DanhSachPhieuMuon = new System.Windows.Forms.Label();
             this.pnl_Main = new System.Windows.Forms.Panel();
@@ -134,7 +134,7 @@ namespace QLTV
             // btn_Clear
             // 
             this.btn_Clear.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Clear.Location = new System.Drawing.Point(323, 396);
+            this.btn_Clear.Location = new System.Drawing.Point(357, 396);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(104, 42);
             this.btn_Clear.TabIndex = 17;
@@ -145,7 +145,7 @@ namespace QLTV
             // btn_Xoa
             // 
             this.btn_Xoa.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Xoa.Location = new System.Drawing.Point(192, 396);
+            this.btn_Xoa.Location = new System.Drawing.Point(226, 396);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(104, 42);
             this.btn_Xoa.TabIndex = 16;
@@ -156,7 +156,7 @@ namespace QLTV
             // btn_Sua
             // 
             this.btn_Sua.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Sua.Location = new System.Drawing.Point(65, 396);
+            this.btn_Sua.Location = new System.Drawing.Point(89, 396);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(104, 42);
             this.btn_Sua.TabIndex = 15;
@@ -178,8 +178,9 @@ namespace QLTV
             // 
             // txt_GhiChu
             // 
+            this.txt_GhiChu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_GhiChu.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_GhiChu.Location = new System.Drawing.Point(206, 333);
+            this.txt_GhiChu.Location = new System.Drawing.Point(243, 333);
             this.txt_GhiChu.Name = "txt_GhiChu";
             this.txt_GhiChu.Size = new System.Drawing.Size(219, 30);
             this.txt_GhiChu.TabIndex = 14;
@@ -196,8 +197,9 @@ namespace QLTV
             // 
             // txt_NgayThanhToan
             // 
+            this.txt_NgayThanhToan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_NgayThanhToan.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayThanhToan.Location = new System.Drawing.Point(206, 291);
+            this.txt_NgayThanhToan.Location = new System.Drawing.Point(243, 291);
             this.txt_NgayThanhToan.Name = "txt_NgayThanhToan";
             this.txt_NgayThanhToan.ReadOnly = true;
             this.txt_NgayThanhToan.Size = new System.Drawing.Size(219, 30);
@@ -215,8 +217,9 @@ namespace QLTV
             // 
             // txt_NgayTaoHoaDon
             // 
+            this.txt_NgayTaoHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_NgayTaoHoaDon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayTaoHoaDon.Location = new System.Drawing.Point(206, 247);
+            this.txt_NgayTaoHoaDon.Location = new System.Drawing.Point(243, 247);
             this.txt_NgayTaoHoaDon.Name = "txt_NgayTaoHoaDon";
             this.txt_NgayTaoHoaDon.ReadOnly = true;
             this.txt_NgayTaoHoaDon.Size = new System.Drawing.Size(219, 30);
@@ -234,8 +237,9 @@ namespace QLTV
             // 
             // txt_TongThanhToan
             // 
+            this.txt_TongThanhToan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_TongThanhToan.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TongThanhToan.Location = new System.Drawing.Point(206, 205);
+            this.txt_TongThanhToan.Location = new System.Drawing.Point(243, 205);
             this.txt_TongThanhToan.Name = "txt_TongThanhToan";
             this.txt_TongThanhToan.ReadOnly = true;
             this.txt_TongThanhToan.Size = new System.Drawing.Size(219, 30);
@@ -253,8 +257,9 @@ namespace QLTV
             // 
             // txt_TongTien
             // 
+            this.txt_TongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_TongTien.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TongTien.Location = new System.Drawing.Point(206, 159);
+            this.txt_TongTien.Location = new System.Drawing.Point(243, 159);
             this.txt_TongTien.Name = "txt_TongTien";
             this.txt_TongTien.ReadOnly = true;
             this.txt_TongTien.Size = new System.Drawing.Size(219, 30);
@@ -272,8 +277,9 @@ namespace QLTV
             // 
             // txt_MaPhieuMuon
             // 
+            this.txt_MaPhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_MaPhieuMuon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaPhieuMuon.Location = new System.Drawing.Point(206, 116);
+            this.txt_MaPhieuMuon.Location = new System.Drawing.Point(243, 116);
             this.txt_MaPhieuMuon.Name = "txt_MaPhieuMuon";
             this.txt_MaPhieuMuon.ReadOnly = true;
             this.txt_MaPhieuMuon.Size = new System.Drawing.Size(219, 30);
@@ -291,8 +297,9 @@ namespace QLTV
             // 
             // txt_MaHoaDon
             // 
+            this.txt_MaHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_MaHoaDon.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaHoaDon.Location = new System.Drawing.Point(206, 74);
+            this.txt_MaHoaDon.Location = new System.Drawing.Point(243, 74);
             this.txt_MaHoaDon.Name = "txt_MaHoaDon";
             this.txt_MaHoaDon.ReadOnly = true;
             this.txt_MaHoaDon.Size = new System.Drawing.Size(219, 30);
@@ -322,19 +329,20 @@ namespace QLTV
             // 
             this.dgv_DanhSachHoaDon.AllowUserToAddRows = false;
             this.dgv_DanhSachHoaDon.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dgv_DanhSachHoaDon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgv_DanhSachHoaDon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_DanhSachHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_DanhSachHoaDon.BackgroundColor = System.Drawing.Color.White;
             this.dgv_DanhSachHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_DanhSachHoaDon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_DanhSachHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_DanhSachHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_DanhSachHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DanhSachHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaHoaDon,
@@ -345,14 +353,14 @@ namespace QLTV
             this.col_NgayThanhToan,
             this.col_GhiChu,
             this.col_TrangThai});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_DanhSachHoaDon.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_DanhSachHoaDon.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_DanhSachHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_DanhSachHoaDon.EnableHeadersVisualStyles = false;
             this.dgv_DanhSachHoaDon.Location = new System.Drawing.Point(0, 0);

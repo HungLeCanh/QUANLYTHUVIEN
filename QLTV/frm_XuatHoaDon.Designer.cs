@@ -120,7 +120,7 @@ namespace QLTV
             // txt_TimKiem
             // 
             this.txt_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TimKiem.Location = new System.Drawing.Point(203, 21);
+            this.txt_TimKiem.Location = new System.Drawing.Point(269, 21);
             this.txt_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TimKiem.Name = "txt_TimKiem";
             this.txt_TimKiem.Size = new System.Drawing.Size(265, 26);
@@ -129,10 +129,10 @@ namespace QLTV
             // btn_TimKiem
             // 
             this.btn_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiem.Location = new System.Drawing.Point(487, 18);
+            this.btn_TimKiem.Location = new System.Drawing.Point(546, 18);
             this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_TimKiem.Name = "btn_TimKiem";
-            this.btn_TimKiem.Size = new System.Drawing.Size(107, 34);
+            this.btn_TimKiem.Size = new System.Drawing.Size(107, 37);
             this.btn_TimKiem.TabIndex = 2;
             this.btn_TimKiem.Text = "Tìm kiếm";
             this.btn_TimKiem.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@ namespace QLTV
             // btn_Refresh
             // 
             this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(615, 17);
+            this.btn_Refresh.Location = new System.Drawing.Point(661, 21);
             this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(107, 34);
@@ -180,6 +180,7 @@ namespace QLTV
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dgv_PhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_PhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_PhieuMuon.BackgroundColor = System.Drawing.Color.White;
             this.dgv_PhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_PhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -310,7 +311,7 @@ namespace QLTV
             // btn_HomNay
             // 
             this.btn_HomNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_HomNay.Location = new System.Drawing.Point(473, 260);
+            this.btn_HomNay.Location = new System.Drawing.Point(518, 264);
             this.btn_HomNay.Margin = new System.Windows.Forms.Padding(4);
             this.btn_HomNay.Name = "btn_HomNay";
             this.btn_HomNay.Size = new System.Drawing.Size(107, 34);
@@ -350,7 +351,7 @@ namespace QLTV
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label3.Location = new System.Drawing.Point(199, 244);
+            this.label3.Location = new System.Drawing.Point(242, 248);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 20);
@@ -361,7 +362,7 @@ namespace QLTV
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(573, 69);
+            this.label2.Location = new System.Drawing.Point(552, 65);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 29);
@@ -393,7 +394,7 @@ namespace QLTV
             // txt_MaPhieuMuon
             // 
             this.txt_MaPhieuMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaPhieuMuon.Location = new System.Drawing.Point(200, 67);
+            this.txt_MaPhieuMuon.Location = new System.Drawing.Point(245, 71);
             this.txt_MaPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaPhieuMuon.Name = "txt_MaPhieuMuon";
             this.txt_MaPhieuMuon.ReadOnly = true;
@@ -425,7 +426,7 @@ namespace QLTV
             // txt_SoDienThoai
             // 
             this.txt_SoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SoDienThoai.Location = new System.Drawing.Point(200, 116);
+            this.txt_SoDienThoai.Location = new System.Drawing.Point(245, 120);
             this.txt_SoDienThoai.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SoDienThoai.Name = "txt_SoDienThoai";
             this.txt_SoDienThoai.ReadOnly = true;
@@ -446,7 +447,7 @@ namespace QLTV
             // txt_NgayMuon
             // 
             this.txt_NgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayMuon.Location = new System.Drawing.Point(200, 165);
+            this.txt_NgayMuon.Location = new System.Drawing.Point(245, 169);
             this.txt_NgayMuon.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NgayMuon.Name = "txt_NgayMuon";
             this.txt_NgayMuon.ReadOnly = true;
@@ -467,7 +468,7 @@ namespace QLTV
             // txt_NgayTraDuKien
             // 
             this.txt_NgayTraDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayTraDuKien.Location = new System.Drawing.Point(200, 214);
+            this.txt_NgayTraDuKien.Location = new System.Drawing.Point(245, 218);
             this.txt_NgayTraDuKien.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NgayTraDuKien.Name = "txt_NgayTraDuKien";
             this.txt_NgayTraDuKien.ReadOnly = true;
@@ -488,7 +489,7 @@ namespace QLTV
             // txt_NgayTraThucTe
             // 
             this.txt_NgayTraThucTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NgayTraThucTe.Location = new System.Drawing.Point(200, 264);
+            this.txt_NgayTraThucTe.Location = new System.Drawing.Point(245, 268);
             this.txt_NgayTraThucTe.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NgayTraThucTe.Name = "txt_NgayTraThucTe";
             this.txt_NgayTraThucTe.Size = new System.Drawing.Size(265, 26);
@@ -514,7 +515,7 @@ namespace QLTV
             "dang_muon",
             "da_tra",
             "qua_han"});
-            this.cbo_TrangThai.Location = new System.Drawing.Point(200, 313);
+            this.cbo_TrangThai.Location = new System.Drawing.Point(245, 317);
             this.cbo_TrangThai.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_TrangThai.Name = "cbo_TrangThai";
             this.cbo_TrangThai.Size = new System.Drawing.Size(265, 28);
@@ -562,6 +563,7 @@ namespace QLTV
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dgv_ChiTietPhieuMuon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_ChiTietPhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_ChiTietPhieuMuon.BackgroundColor = System.Drawing.Color.White;
             this.dgv_ChiTietPhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_ChiTietPhieuMuon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
