@@ -128,5 +128,13 @@ namespace QLTV
                 OpenForm(new frm_DanhSachHoaDon());
             }
         }
+
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_ThongKe"] == null)
+            {
+                OpenForm(new frm_ThongKe());
+            }
+        }
     }
 }

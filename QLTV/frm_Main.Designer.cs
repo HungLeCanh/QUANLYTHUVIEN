@@ -143,7 +143,7 @@
             // xuấtHoáĐơnToolStripMenuItem
             // 
             this.xuấtHoáĐơnToolStripMenuItem.Name = "xuấtHoáĐơnToolStripMenuItem";
-            this.xuấtHoáĐơnToolStripMenuItem.Size = new System.Drawing.Size(319, 30);
+            this.xuấtHoáĐơnToolStripMenuItem.Size = new System.Drawing.Size(293, 30);
             this.xuấtHoáĐơnToolStripMenuItem.Text = "📤 Xuất Hoá đơn";
             this.xuấtHoáĐơnToolStripMenuItem.Click += new System.EventHandler(this.xuấtHoáĐơnToolStripMenuItem_Click);
             // 
@@ -186,6 +186,7 @@
             this.doanhThuToolStripMenuItem.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(165, 29);
             this.doanhThuToolStripMenuItem.Text = "💰 Doanh Thu";
+            this.doanhThuToolStripMenuItem.Click += new System.EventHandler(this.doanhThuToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
