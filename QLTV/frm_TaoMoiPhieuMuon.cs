@@ -2,29 +2,29 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace QLTV
 {
-    public partial class frm_TaoPhieuMuon : Form
+    public partial class frm_TaoMoiPhieuMuon : Form
     {
         private Database db;
         private List<SachDaChon> danhSachSachDaChon;
         private decimal tongTien = 0;
 
-        public frm_TaoPhieuMuon()
+        public frm_TaoMoiPhieuMuon()
         {
             InitializeComponent();
             db = new Database();
             danhSachSachDaChon = new List<SachDaChon>();
         }
 
-        private void frm_TaoPhieuMuon_Load(object sender, EventArgs e)
+        private void frm_TaoMoiPhieuMuon_Load(object sender, EventArgs e)
         {
             // Thiết lập ngày mượn mặc định là hôm nay
             dtp_NgayMuon.Value = DateTime.Now;
@@ -259,7 +259,7 @@ namespace QLTV
             // tính lại tien thue cho tung sach theo thoi gian
             foreach (var s in danhSachSachDaChon)
             {
-                s.ThanhTien = s.DonGiaMuon*soNgayMuon;
+                s.ThanhTien = s.DonGiaMuon * soNgayMuon;
             }
             tongTien = danhSachSachDaChon.Sum(s => s.ThanhTien);
             txt_TongTien.Text = tongTien.ToString("N0");
@@ -429,7 +429,10 @@ namespace QLTV
             CapNhatDanhSachSachDaChon();
         }
 
-     
+        private void txt_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            LoadDanhSachSach(txt_TimKiem.Text.Trim());
+        }
     }
 
     // Class helper để lưu thông tin sách đã chọn

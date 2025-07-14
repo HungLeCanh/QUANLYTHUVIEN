@@ -153,11 +153,11 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_TaoPhieuMuon.cs">
+    <Compile Include="frm_TaoMoiPhieuMuon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_TaoPhieuMuon.Designer.cs">
-      <DependentUpon>frm_TaoPhieuMuon.cs</DependentUpon>
+    <Compile Include="frm_TaoMoiPhieuMuon.Designer.cs">
+      <DependentUpon>frm_TaoMoiPhieuMuon.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ThemDocGia.cs">
       <SubType>Form</SubType>
@@ -217,8 +217,8 @@
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_TaoPhieuMuon.resx">
-      <DependentUpon>frm_TaoPhieuMuon.cs</DependentUpon>
+    <EmbeddedResource Include="frm_TaoMoiPhieuMuon.resx">
+      <DependentUpon>frm_TaoMoiPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ThemDocGia.resx">
       <DependentUpon>frm_ThemDocGia.cs</DependentUpon>

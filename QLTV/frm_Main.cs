@@ -79,9 +79,9 @@ namespace QLTV
         private void tạoPhiếuMượnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Mở form tạo phiếu mượn, có kiểm tra xem form đã mở hay chưa
-            if (Application.OpenForms["frm_TaoPhieuMuon"] == null)
+            if (Application.OpenForms["frm_TaoMoiPhieuMuon"] == null)
             {
-                OpenForm(new frm_TaoPhieuMuon());
+                OpenForm(new frm_TaoMoiPhieuMuon());
             }
         }
 
