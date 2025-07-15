@@ -268,6 +268,10 @@ namespace QLTV
             // Mở form hóa đơn
             frm_HoaDonThanhToan frm = new frm_HoaDonThanhToan(maPhieuMuon, chiTietTable, soNgayMuon, thanhTien);
             frm.ShowDialog();
+            if (frm.done = true)
+            {
+                LoadPhieuMuon();
+            }
         }
 
 

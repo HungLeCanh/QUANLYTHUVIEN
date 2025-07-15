@@ -17,6 +17,7 @@ namespace QLTV
         DataTable chiTiet;
         int soNgayMuon;
         decimal thanhTien;
+        public bool done = false;
         public frm_HoaDonThanhToan(string maPhieuMuon, DataTable chiTiet, int soNgayMuon, decimal thanhTien)
         {
             InitializeComponent();
@@ -95,15 +96,18 @@ namespace QLTV
                 {
                     MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
+                    done = true;
                 }
                 else
                 {
                     MessageBox.Show("Không tìm thấy hóa đơn để cập nhật.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    done = false;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi thanh toán: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                done = false;
             }
         }
 
