@@ -406,7 +406,7 @@ namespace QLTV
             // txt_TimKiem
             // 
             this.txt_TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TimKiem.Location = new System.Drawing.Point(221, 18);
+            this.txt_TimKiem.Location = new System.Drawing.Point(229, 18);
             this.txt_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TimKiem.Name = "txt_TimKiem";
             this.txt_TimKiem.Size = new System.Drawing.Size(265, 26);

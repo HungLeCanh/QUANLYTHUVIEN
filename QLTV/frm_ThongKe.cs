@@ -17,53 +17,101 @@ namespace QLTV
         {
             InitializeComponent();
             db = new Database();
-            LoadStatistic();
+            LoadMonthAndYear();
+            LoadAllData();
+        }
+
+
+        public void LoadAllData()
+        {
             LoadChart_MonthlyLoans();
+            LoadStatistic();
             LoadChart_BooksByCategory();
             LoadChart_BookStatus();
         }
 
+        public void LoadMonthAndYear()
+        {
+            for (int i = 1; i <= 12; i++)
+            {
+                cbb_Thang.Items.Add(i.ToString("D2"));
+            }
+
+            int currentYear = DateTime.Now.Year;
+            for (int y = currentYear - 5; y <= currentYear; y++)
+            {
+                cbb_Nam.Items.Add(y.ToString());
+            }
+
+            cbb_Thang.SelectedItem = DateTime.Now.Month.ToString("D2");
+            cbb_Nam.SelectedItem = currentYear.ToString();
+        }
+
+
         public void LoadStatistic()
         {
+            if (cbb_Thang.SelectedItem == null || cbb_Nam.SelectedItem == null)
+                return;
+
+            string selectedMonth = cbb_Thang.SelectedItem.ToString();
+            string selectedYear = cbb_Nam.SelectedItem.ToString();
+
             // Tổng sách
             string tongSachSql = "SELECT COUNT(*) FROM sach";
-            int tongSach = Convert.ToInt32(db.ExecuteScalar(tongSachSql));
-            lbl_TotalBooksValue.Text = tongSach.ToString();
+            lbl_TotalBooksValue.Text = Convert.ToInt32(db.ExecuteScalar(tongSachSql)).ToString();
 
             // Tổng độc giả
             string tongDocGiaSql = "SELECT COUNT(*) FROM doc_gia";
-            int tongDocGia = Convert.ToInt32(db.ExecuteScalar(tongDocGiaSql));
-            lbl_TotalReadersValue.Text = tongDocGia.ToString();
+            lbl_TotalReadersValue.Text = Convert.ToInt32(db.ExecuteScalar(tongDocGiaSql)).ToString();
 
-            // Tổng phiếu đang mượn
-            string tongPhieuDangMuonSql = "SELECT COUNT(*) FROM phieu_muon WHERE trang_thai = 'dang_muon'";
-            int tongPhieuDangMuon = Convert.ToInt32(db.ExecuteScalar(tongPhieuDangMuonSql));
-            lbl_ActiveLoansValue.Text = tongPhieuDangMuon.ToString();
+            // Tổng phiếu đang mượn trong tháng/năm
+            string tongPhieuDangMuonSql = $@"
+        SELECT COUNT(*) 
+        FROM phieu_muon 
+        WHERE trang_thai = 'dang_muon'
+          AND MONTH(ngay_muon) = {selectedMonth}
+          AND YEAR(ngay_muon) = {selectedYear}";
+            lbl_ActiveLoansValue.Text = Convert.ToInt32(db.ExecuteScalar(tongPhieuDangMuonSql)).ToString();
 
-            // Tổng phiếu quá hạn
-            string tongPhieuQuaHanSql = "SELECT COUNT(*) FROM phieu_muon WHERE trang_thai = 'qua_han'";
-            int tongPhieuQuaHan = Convert.ToInt32(db.ExecuteScalar(tongPhieuQuaHanSql));
-            lbl_OverdueLoansValue.Text = tongPhieuQuaHan.ToString();
+            // Tổng phiếu quá hạn trong tháng/năm
+            string tongPhieuQuaHanSql = $@"
+        SELECT COUNT(*) 
+        FROM phieu_muon 
+        WHERE trang_thai = 'qua_han'
+          AND MONTH(ngay_muon) = {selectedMonth}
+          AND YEAR(ngay_muon) = {selectedYear}";
+            lbl_OverdueLoansValue.Text = Convert.ToInt32(db.ExecuteScalar(tongPhieuQuaHanSql)).ToString();
 
-            // Tổng hóa đơn đã thanh toán
-            string tongHoaDonDaThanhToanSql = "SELECT COUNT(*) FROM hoa_don WHERE trang_thai = 'da_thanh_toan'";
-            int tongHoaDonDaThanhToan = Convert.ToInt32(db.ExecuteScalar(tongHoaDonDaThanhToanSql));
-            lbl_PaidInvoicesValue.Text = tongHoaDonDaThanhToan.ToString();
+            // Tổng hóa đơn đã thanh toán trong tháng/năm
+            string tongHoaDonDaThanhToanSql = $@"
+        SELECT COUNT(*) 
+        FROM hoa_don 
+        WHERE trang_thai = 'da_thanh_toan'
+          AND MONTH(ngay_thanh_toan) = {selectedMonth}
+          AND YEAR(ngay_thanh_toan) = {selectedYear}";
+            lbl_PaidInvoicesValue.Text = Convert.ToInt32(db.ExecuteScalar(tongHoaDonDaThanhToanSql)).ToString();
 
-            // Tổng doanh thu từ các hóa đơn đã thanh toán
-            string tongDoanhThuSql = "SELECT ISNULL(SUM(tong_thanh_toan), 0) FROM hoa_don WHERE trang_thai = 'da_thanh_toan'";
+            // Tổng doanh thu từ các hóa đơn đã thanh toán trong tháng/năm
+            string tongDoanhThuSql = $@"
+        SELECT ISNULL(SUM(tong_thanh_toan), 0) 
+        FROM hoa_don 
+        WHERE trang_thai = 'da_thanh_toan'
+          AND MONTH(ngay_thanh_toan) = {selectedMonth}
+          AND YEAR(ngay_thanh_toan) = {selectedYear}";
             decimal tongDoanhThu = Convert.ToDecimal(db.ExecuteScalar(tongDoanhThuSql));
-            lbl_RevenueValue.Text = tongDoanhThu.ToString("N0") + " đ"; // Định dạng tiền
+            lbl_RevenueValue.Text = tongDoanhThu.ToString("N0") + " đ";
         }
+
 
         public void LoadChart_MonthlyLoans()
         {
-            string sql = @"
+            int year = int.Parse(cbb_Nam.SelectedItem.ToString());
+            string sql = $@"
         SELECT 
             MONTH(ngay_muon) AS Thang,
             COUNT(*) AS SoLuotMuon
         FROM phieu_muon
-        WHERE YEAR(ngay_muon) = YEAR(GETDATE())
+        WHERE YEAR(ngay_muon) = '{year}'
         GROUP BY MONTH(ngay_muon)
         ORDER BY Thang";
 
@@ -141,6 +189,18 @@ namespace QLTV
             chart_BookStatus.Series["Trạng thái"].IsValueShownAsLabel = true;
             chart_BookStatus.Series["Trạng thái"].Label = "#VALX: #PERCENT";
             chart_BookStatus.Series["Trạng thái"].ToolTip = "#VALX: #VAL (#PERCENT)";
+        }
+
+        private void cbb_Thang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbb_Thang.SelectedItem != null && cbb_Nam.SelectedItem != null)
+                LoadAllData();
+        }
+
+        private void cbb_Nam_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbb_Thang.SelectedItem != null && cbb_Nam.SelectedItem != null)
+                LoadAllData();
         }
 
     }

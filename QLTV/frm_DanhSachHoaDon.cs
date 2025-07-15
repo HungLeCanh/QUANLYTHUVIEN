@@ -109,30 +109,6 @@ namespace QLTV
 
         }
 
-        private void btn_Xoa_Click(object sender, EventArgs e)
-        {
-            var result = MessageBox.Show(
-                "Bạn có chắc chắn muốn xoá hoá đơn này?",
-                "Xác nhận xoá",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning);
-
-            if (result == DialogResult.Yes)
-            {
-                string sql = $"delete from hoa_don where ma_hoa_don = '{txt_MaHoaDon.Text}'";
-                int rows = db.ExecuteNonQuery(sql);
-                if (rows > 0)
-                {
-                    MessageBox.Show("Xoá hoá đơn thành công");
-                    LoadHoaDon();
-                }
-                else
-                {
-                    MessageBox.Show("Xoá hoá đơn thất bại");
-                }
-            }
-        }
-
         private void btn_Clear_Click(object sender, EventArgs e)
         {
             txt_MaHoaDon.Text = string.Empty;

@@ -141,10 +141,10 @@ namespace QLTV
             // btn_Refresh
             // 
             this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(661, 21);
+            this.btn_Refresh.Location = new System.Drawing.Point(661, 18);
             this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(107, 34);
+            this.btn_Refresh.Size = new System.Drawing.Size(107, 37);
             this.btn_Refresh.TabIndex = 4;
             this.btn_Refresh.Text = "Làm mới";
             this.btn_Refresh.UseVisualStyleBackColor = true;

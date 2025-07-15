@@ -184,8 +184,8 @@
             this.doanhThuToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
             this.doanhThuToolStripMenuItem.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(165, 29);
-            this.doanhThuToolStripMenuItem.Text = "💰 Doanh Thu";
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(152, 29);
+            this.doanhThuToolStripMenuItem.Text = "💰 Thống Kê";
             this.doanhThuToolStripMenuItem.Click += new System.EventHandler(this.doanhThuToolStripMenuItem_Click);
             // 
             // statusStrip1

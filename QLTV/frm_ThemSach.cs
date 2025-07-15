@@ -74,5 +74,26 @@ namespace QLTV
         {
             ClearInputFields();
         }
+
+        private void txt_DonGiaMuon_TextChanged(object sender, EventArgs e)
+        {
+            txt_DonGiaMuon.TextChanged -= txt_DonGiaMuon_TextChanged;
+
+            string input = txt_DonGiaMuon.Text.Replace(",", "").Trim(); // Xóa dấu phẩy cũ
+
+            if (long.TryParse(input, out long number))
+            {
+                // Lưu lại vị trí con trỏ trước khi thay đổi
+                int selectionStart = txt_DonGiaMuon.SelectionStart;
+
+                txt_DonGiaMuon.Text = number.ToString("N0"); // Format: 10000 -> 10,000
+
+                // Đặt lại vị trí con trỏ phù hợp
+                txt_DonGiaMuon.SelectionStart = txt_DonGiaMuon.Text.Length;
+            }
+
+            // Đăng ký lại sự kiện
+            txt_DonGiaMuon.TextChanged += txt_DonGiaMuon_TextChanged;
+        }
     }
 }

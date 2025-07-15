@@ -163,5 +163,19 @@ namespace QLTV
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
+
+        private void btn_HienMatKhau_Click(object sender, EventArgs e)
+        {
+            if(btn_HienMatKhau.Text == "Hiện")
+            {
+                btn_HienMatKhau.Text = "Ẩn";
+                txt_MatKhau.PasswordChar = '\0';
+            }
+            else
+            {
+                btn_HienMatKhau.Text = "Hiện";
+                txt_MatKhau.PasswordChar = '●';
+            }
+        }
     }
 }

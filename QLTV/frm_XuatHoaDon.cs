@@ -183,7 +183,11 @@ namespace QLTV
                 return;
 
             int soNgayMuon = (ngayTraThucTe - ngayMuon).Days;
-            if (soNgayMuon <= 0)
+            if(soNgayMuon == 0)
+            {
+                soNgayMuon += 1;
+            }
+            if (soNgayMuon < 0)
             {
                 MessageBox.Show("Ngày trả thực tế phải sau ngày mượn!", "Lỗi tính ngày", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

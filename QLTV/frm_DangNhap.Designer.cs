@@ -33,6 +33,7 @@
             this.btn_NhapLai = new System.Windows.Forms.Button();
             this.btn_DangNhap = new System.Windows.Forms.Button();
             this.panel_MatKhau = new System.Windows.Forms.Panel();
+            this.btn_HienMatKhau = new System.Windows.Forms.Button();
             this.txt_MatKhau = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_TenDangNhap = new System.Windows.Forms.Panel();
@@ -42,6 +43,8 @@
             this.panel_Header = new System.Windows.Forms.Panel();
             this.label_WelcomeBack = new System.Windows.Forms.Label();
             this.label_Title = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel_Main.SuspendLayout();
             this.panel_LoginBox.SuspendLayout();
             this.panel_MatKhau.SuspendLayout();
@@ -55,6 +58,7 @@
             this.panel_Main.Controls.Add(this.panel_LoginBox);
             this.panel_Main.Controls.Add(this.panel_Header);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_Main.Location = new System.Drawing.Point(0, 0);
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Size = new System.Drawing.Size(1000, 600);
@@ -63,14 +67,15 @@
             // panel_LoginBox
             // 
             this.panel_LoginBox.BackColor = System.Drawing.Color.White;
+            this.panel_LoginBox.Controls.Add(this.label4);
             this.panel_LoginBox.Controls.Add(this.btn_NhapLai);
             this.panel_LoginBox.Controls.Add(this.btn_DangNhap);
             this.panel_LoginBox.Controls.Add(this.panel_MatKhau);
             this.panel_LoginBox.Controls.Add(this.panel_TenDangNhap);
             this.panel_LoginBox.Controls.Add(this.label1);
-            this.panel_LoginBox.Location = new System.Drawing.Point(230, 150);
+            this.panel_LoginBox.Location = new System.Drawing.Point(185, 151);
             this.panel_LoginBox.Name = "panel_LoginBox";
-            this.panel_LoginBox.Size = new System.Drawing.Size(529, 350);
+            this.panel_LoginBox.Size = new System.Drawing.Size(642, 350);
             this.panel_LoginBox.TabIndex = 1;
             // 
             // btn_NhapLai
@@ -81,7 +86,7 @@
             this.btn_NhapLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhapLai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_NhapLai.ForeColor = System.Drawing.Color.White;
-            this.btn_NhapLai.Location = new System.Drawing.Point(283, 260);
+            this.btn_NhapLai.Location = new System.Drawing.Point(357, 260);
             this.btn_NhapLai.Name = "btn_NhapLai";
             this.btn_NhapLai.Size = new System.Drawing.Size(120, 45);
             this.btn_NhapLai.TabIndex = 4;
@@ -97,7 +102,7 @@
             this.btn_DangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_DangNhap.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_DangNhap.ForeColor = System.Drawing.Color.White;
-            this.btn_DangNhap.Location = new System.Drawing.Point(90, 260);
+            this.btn_DangNhap.Location = new System.Drawing.Point(167, 260);
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Size = new System.Drawing.Size(120, 45);
             this.btn_DangNhap.TabIndex = 3;
@@ -108,12 +113,26 @@
             // panel_MatKhau
             // 
             this.panel_MatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.panel_MatKhau.Controls.Add(this.btn_HienMatKhau);
             this.panel_MatKhau.Controls.Add(this.txt_MatKhau);
             this.panel_MatKhau.Controls.Add(this.label3);
             this.panel_MatKhau.Location = new System.Drawing.Point(50, 180);
             this.panel_MatKhau.Name = "panel_MatKhau";
-            this.panel_MatKhau.Size = new System.Drawing.Size(418, 50);
+            this.panel_MatKhau.Size = new System.Drawing.Size(540, 50);
             this.panel_MatKhau.TabIndex = 2;
+            // 
+            // btn_HienMatKhau
+            // 
+            this.btn_HienMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_HienMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_HienMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HienMatKhau.Location = new System.Drawing.Point(433, 0);
+            this.btn_HienMatKhau.Name = "btn_HienMatKhau";
+            this.btn_HienMatKhau.Size = new System.Drawing.Size(107, 50);
+            this.btn_HienMatKhau.TabIndex = 2;
+            this.btn_HienMatKhau.Text = "Hiện";
+            this.btn_HienMatKhau.UseVisualStyleBackColor = false;
+            this.btn_HienMatKhau.Click += new System.EventHandler(this.btn_HienMatKhau_Click);
             // 
             // txt_MatKhau
             // 
@@ -121,10 +140,10 @@
             this.txt_MatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_MatKhau.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txt_MatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.txt_MatKhau.Location = new System.Drawing.Point(155, 15);
+            this.txt_MatKhau.Location = new System.Drawing.Point(155, 11);
             this.txt_MatKhau.Name = "txt_MatKhau";
             this.txt_MatKhau.PasswordChar = '●';
-            this.txt_MatKhau.Size = new System.Drawing.Size(260, 27);
+            this.txt_MatKhau.Size = new System.Drawing.Size(272, 27);
             this.txt_MatKhau.TabIndex = 1;
             // 
             // label3
@@ -145,7 +164,7 @@
             this.panel_TenDangNhap.Controls.Add(this.label2);
             this.panel_TenDangNhap.Location = new System.Drawing.Point(50, 110);
             this.panel_TenDangNhap.Name = "panel_TenDangNhap";
-            this.panel_TenDangNhap.Size = new System.Drawing.Size(418, 50);
+            this.panel_TenDangNhap.Size = new System.Drawing.Size(540, 50);
             this.panel_TenDangNhap.TabIndex = 1;
             // 
             // txt_TenDangNhap
@@ -156,7 +175,7 @@
             this.txt_TenDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.txt_TenDangNhap.Location = new System.Drawing.Point(155, 15);
             this.txt_TenDangNhap.Name = "txt_TenDangNhap";
-            this.txt_TenDangNhap.Size = new System.Drawing.Size(260, 27);
+            this.txt_TenDangNhap.Size = new System.Drawing.Size(382, 27);
             this.txt_TenDangNhap.TabIndex = 1;
             // 
             // label2
@@ -175,7 +194,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label1.Location = new System.Drawing.Point(143, 30);
+            this.label1.Location = new System.Drawing.Point(206, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(230, 54);
             this.label1.TabIndex = 0;
@@ -213,6 +232,17 @@
             this.label_Title.Size = new System.Drawing.Size(397, 41);
             this.label_Title.TabIndex = 0;
             this.label_Title.Text = "Hệ thống Quản lý Thư viện";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(179, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(244, 28);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "TK và MK đều là \'admin\'";
             // 
             // frm_DangNhap
             // 
@@ -255,5 +285,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_DangNhap;
         private System.Windows.Forms.Button btn_NhapLai;
+        private System.Windows.Forms.Button btn_HienMatKhau;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label4;
     }
 }

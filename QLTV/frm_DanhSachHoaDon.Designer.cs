@@ -31,15 +31,14 @@ namespace QLTV
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_Header = new System.Windows.Forms.Panel();
             this.lbl_DanhSachPhieuMuon = new System.Windows.Forms.Label();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_ThongTin = new System.Windows.Forms.Panel();
             this.btn_Clear = new System.Windows.Forms.Button();
-            this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_GhiChu = new System.Windows.Forms.TextBox();
@@ -108,7 +107,6 @@ namespace QLTV
             // pnl_ThongTin
             // 
             this.pnl_ThongTin.Controls.Add(this.btn_Clear);
-            this.pnl_ThongTin.Controls.Add(this.btn_Xoa);
             this.pnl_ThongTin.Controls.Add(this.btn_Sua);
             this.pnl_ThongTin.Controls.Add(this.label8);
             this.pnl_ThongTin.Controls.Add(this.txt_GhiChu);
@@ -142,21 +140,10 @@ namespace QLTV
             this.btn_Clear.UseVisualStyleBackColor = true;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Xoa.Location = new System.Drawing.Point(226, 396);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(104, 42);
-            this.btn_Xoa.TabIndex = 16;
-            this.btn_Xoa.Text = "Xoá";
-            this.btn_Xoa.UseVisualStyleBackColor = true;
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
             // btn_Sua
             // 
             this.btn_Sua.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Sua.Location = new System.Drawing.Point(89, 396);
+            this.btn_Sua.Location = new System.Drawing.Point(243, 396);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(104, 42);
             this.btn_Sua.TabIndex = 15;
@@ -329,20 +316,20 @@ namespace QLTV
             // 
             this.dgv_DanhSachHoaDon.AllowUserToAddRows = false;
             this.dgv_DanhSachHoaDon.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dgv_DanhSachHoaDon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgv_DanhSachHoaDon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_DanhSachHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_DanhSachHoaDon.BackgroundColor = System.Drawing.Color.White;
             this.dgv_DanhSachHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_DanhSachHoaDon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_DanhSachHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_DanhSachHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_DanhSachHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DanhSachHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaHoaDon,
@@ -353,14 +340,14 @@ namespace QLTV
             this.col_NgayThanhToan,
             this.col_GhiChu,
             this.col_TrangThai});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_DanhSachHoaDon.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_DanhSachHoaDon.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_DanhSachHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_DanhSachHoaDon.EnableHeadersVisualStyles = false;
             this.dgv_DanhSachHoaDon.Location = new System.Drawing.Point(0, 0);
@@ -461,7 +448,6 @@ namespace QLTV
         private System.Windows.Forms.DataGridView dgv_DanhSachHoaDon;
         private System.Windows.Forms.Label label8;
         private Button btn_Clear;
-        private Button btn_Xoa;
         private Button btn_Sua;
         private TextBox txt_GhiChu;
         private Label lbl_GhiChu;
