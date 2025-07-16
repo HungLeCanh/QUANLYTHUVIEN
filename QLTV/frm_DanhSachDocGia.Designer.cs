@@ -53,6 +53,10 @@
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
             this.lbl_Email = new System.Windows.Forms.Label();
             this.txt_Email = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_TimKiemSDT = new System.Windows.Forms.TextBox();
+            this.btn_TimDocGia = new System.Windows.Forms.Button();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_danhSachDocGia)).BeginInit();
             this.panel_Header.SuspendLayout();
             this.panel_Controls.SuspendLayout();
@@ -234,6 +238,10 @@
             // panel_Main
             // 
             this.panel_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.panel_Main.Controls.Add(this.btn_Refresh);
+            this.panel_Main.Controls.Add(this.label1);
+            this.panel_Main.Controls.Add(this.txt_TimKiemSDT);
+            this.panel_Main.Controls.Add(this.btn_TimDocGia);
             this.panel_Main.Controls.Add(this.lbl_CapNhatThongTinDocGia);
             this.panel_Main.Controls.Add(this.dgv_danhSachDocGia);
             this.panel_Main.Controls.Add(this.tableLayoutPanelInputs);
@@ -364,6 +372,51 @@
             this.txt_Email.Size = new System.Drawing.Size(366, 34);
             this.txt_Email.TabIndex = 7;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(360, 338);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 25);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Số điện thoại:";
+            // 
+            // txt_TimKiemSDT
+            // 
+            this.txt_TimKiemSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_TimKiemSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TimKiemSDT.Location = new System.Drawing.Point(532, 340);
+            this.txt_TimKiemSDT.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_TimKiemSDT.Name = "txt_TimKiemSDT";
+            this.txt_TimKiemSDT.Size = new System.Drawing.Size(265, 24);
+            this.txt_TimKiemSDT.TabIndex = 32;
+            // 
+            // btn_TimDocGia
+            // 
+            this.btn_TimDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimDocGia.Location = new System.Drawing.Point(830, 336);
+            this.btn_TimDocGia.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_TimDocGia.Name = "btn_TimDocGia";
+            this.btn_TimDocGia.Size = new System.Drawing.Size(107, 31);
+            this.btn_TimDocGia.TabIndex = 33;
+            this.btn_TimDocGia.Text = "Tìm";
+            this.btn_TimDocGia.UseVisualStyleBackColor = true;
+            this.btn_TimDocGia.Click += new System.EventHandler(this.btn_TimDocGia_Click);
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.Location = new System.Drawing.Point(955, 337);
+            this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(107, 31);
+            this.btn_Refresh.TabIndex = 34;
+            this.btn_Refresh.Text = "Làm mới";
+            this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
             // frm_DanhSachDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -415,5 +468,9 @@
         private System.Windows.Forms.TextBox txt_HoTen;
         private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.TextBox txt_DiaChi;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_TimKiemSDT;
+        private System.Windows.Forms.Button btn_TimDocGia;
+        private System.Windows.Forms.Button btn_Refresh;
     }
 }

@@ -51,6 +51,29 @@ namespace QLTV
             col_diaChi.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
+        public void TimKiem(string sdt)
+        {
+            string sql = $"SELECT * FROM doc_gia where so_dien_thoai = '{sdt}'";
+            DataTable dt = db.ExecuteQuery(sql);
+
+            dgv_danhSachDocGia.AutoGenerateColumns = false;
+
+            col_SDT.DataPropertyName = "so_dien_thoai";
+            col_hoTen.DataPropertyName = "ho_ten";
+            col_email.DataPropertyName = "email";
+            col_diaChi.DataPropertyName = "dia_chi";
+            col_ngayDangKy.DataPropertyName = "ngay_dang_ky";
+
+            dgv_danhSachDocGia.DataSource = dt;
+
+            dgv_danhSachDocGia.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgv_danhSachDocGia.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            dgv_danhSachDocGia.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            col_diaChi.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        }
+
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             // Kiểm tra xem có dòng nào được chọn không
@@ -178,6 +201,16 @@ namespace QLTV
             {
                 dgv_danhSachDocGia.Rows[e.RowIndex].DefaultCellStyle.BackColor = System.Drawing.Color.White;
             }
+        }
+
+        private void btn_TimDocGia_Click(object sender, EventArgs e)
+        {
+            TimKiem(txt_TimKiemSDT.Text);
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

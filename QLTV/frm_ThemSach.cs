@@ -27,7 +27,14 @@ namespace QLTV
             string tacGia = txt_TenTacGia.Text.Trim();
             string theLoai = cbb_TheLoai.GetItemText(cbb_TheLoai.SelectedItem);
             string nhaXuatBan = txt_NhaXuatBan.Text.Trim();
-            decimal donGiaMuon = decimal.Parse(txt_DonGiaMuon.Text.Trim());
+            decimal donGiaMuon;
+            string donGiaMuonInput = txt_DonGiaMuon.Text.Replace(",", "").Trim();
+            if (string.IsNullOrEmpty(donGiaMuonInput) || !decimal.TryParse(donGiaMuonInput, out donGiaMuon) || donGiaMuon < 0)
+            {
+                MessageBox.Show("Vui lòng nhập đúng định dạng số cho Đơn giá mượn (không để trống và phải là số dương).");
+                txt_DonGiaMuon.Focus();
+                return;
+            }
             int namXuatBan = int.Parse(txt_NamXuatBan.Text.Trim());
             string sql = $"INSERT INTO sach (ten_sach, tac_gia, the_loai, nha_xuat_ban, don_gia_muon, nam_xuat_ban) VALUES (N'{tenSach}', N'{tacGia}', N'{theLoai}', N'{nhaXuatBan}', {donGiaMuon}, {namXuatBan})";
 
