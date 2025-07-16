@@ -262,12 +262,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="imageTrangChu\47BTOLgPRUedx5rfL31_Xg-removebg-preview.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="imageTrangChu\freepik__the-style-is-textured-with-a-handdrawn-look-visibl__29055.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="imageTrangChu\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
