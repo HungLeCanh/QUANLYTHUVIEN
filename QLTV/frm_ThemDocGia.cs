@@ -30,6 +30,7 @@ namespace QLTV
             {
                 // Kiểm tra tính hợp lệ của số điện thoại và email
                 DocGia docGia = new DocGia(soDienThoai, tenDocGia, email, diaChi);
+                string checkKeyValue = $"select top 1 * from doc_gia where so_dien_thoai = '{soDienThoai}'";
                 if (!docGia.IsValidPhoneNumber())
                 {
                     MessageBox.Show("Số điện thoại không hợp lệ. Vui lòng nhập lại.");
@@ -38,6 +39,13 @@ namespace QLTV
                 if (!docGia.IsValidEmail())
                 {
                     MessageBox.Show("Email không hợp lệ. Vui lòng nhập lại.");
+                    return;
+                }
+                DataTable result = db.ExecuteQuery(checkKeyValue);
+
+                if (result.Rows.Count > 0)
+                {
+                    MessageBox.Show("Độc giả với số điện thoại này đã tồn tại.");
                     return;
                 }
                 // Thực hiện thêm độc giả vào cơ sở dữ liệu
