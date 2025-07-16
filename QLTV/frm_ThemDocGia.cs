@@ -12,10 +12,47 @@ namespace QLTV
 {
     public partial class frm_ThemDocGia : Form
     {
+        Database db;
         public frm_ThemDocGia()
         {
             InitializeComponent();
+            db = new Database();
+            LoadChart_DocGiaMoiTheoThang();
         }
+
+        public void LoadChart_DocGiaMoiTheoThang()
+        {
+            int year = DateTime.Now.Year;
+
+            string sql = $@"
+        SELECT 
+            MONTH(ngay_dang_ky) AS Thang,
+            COUNT(*) AS SoLuong
+        FROM doc_gia
+        WHERE YEAR(ngay_dang_ky) = {year}
+        GROUP BY MONTH(ngay_dang_ky)
+        ORDER BY Thang";
+
+            DataTable dt = db.ExecuteQuery(sql);
+
+            // Xóa dữ liệu cũ nếu có
+            chart_DocGiaMoiTheoThang.Series["Số Độc Giả Mới"].Points.Clear();
+
+            // Thêm dữ liệu mới
+            foreach (DataRow row in dt.Rows)
+            {
+                int thang = Convert.ToInt32(row["Thang"]);
+                int soLuong = Convert.ToInt32(row["SoLuong"]);
+
+                chart_DocGiaMoiTheoThang.Series["Số Độc Giả Mới"].Points.AddXY("Tháng " + thang, soLuong);
+            }
+
+            // Định dạng biểu đồ
+            chart_DocGiaMoiTheoThang.ChartAreas[0].AxisX.Title = "Tháng";
+            chart_DocGiaMoiTheoThang.ChartAreas[0].AxisY.Title = "Số Độc Giả Mới";
+            chart_DocGiaMoiTheoThang.ChartAreas[0].AxisX.Interval = 1;
+        }
+
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
@@ -25,7 +62,7 @@ namespace QLTV
             string diaChi = txt_DiaChi.Text.Trim();
             string email = txt_Email.Text.Trim();
             string sql = $"INSERT INTO doc_gia (so_dien_thoai, ho_ten, email, dia_chi) VALUES ('{soDienThoai}', N'{tenDocGia}', '{email}', N'{diaChi}')";
-            Database db = new Database();
+            
             try
             {
                 // Kiểm tra tính hợp lệ của số điện thoại và email

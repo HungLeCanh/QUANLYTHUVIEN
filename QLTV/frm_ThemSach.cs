@@ -18,7 +18,38 @@ namespace QLTV
         {
             InitializeComponent();
             this.db = new Database();
+            LoadChart_BooksByCategory();
         }
+
+        public void LoadChart_BooksByCategory()
+        {
+            string sql = @"
+        SELECT the_loai, COUNT(*) AS SoLuong
+        FROM sach
+        GROUP BY the_loai
+        ORDER BY the_loai";
+
+            DataTable dt = db.ExecuteQuery(sql);
+
+            // Xóa dữ liệu cũ nếu có
+            chart_BooksByCategory.Series["Số lượng sách"].Points.Clear();
+
+            // Thêm dữ liệu mới vào biểu đồ
+            foreach (DataRow row in dt.Rows)
+            {
+                string theLoai = row["the_loai"].ToString();
+                int soLuong = Convert.ToInt32(row["SoLuong"]);
+
+                chart_BooksByCategory.Series["Số lượng sách"].Points.AddXY(theLoai, soLuong);
+            }
+
+            // Cấu hình thêm cho đẹp hơn
+            chart_BooksByCategory.ChartAreas[0].AxisX.Title = "Thể loại";
+            chart_BooksByCategory.ChartAreas[0].AxisY.Title = "Số lượng sách";
+            chart_BooksByCategory.ChartAreas[0].AxisX.LabelStyle.Angle = -45; // nghiêng nhãn thể loại nếu dài
+            chart_BooksByCategory.ChartAreas[0].AxisX.Interval = 1;
+        }
+
 
         private void btn_Them_Click(object sender, EventArgs e)
         {

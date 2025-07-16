@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ThemSach));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel_Controls = new System.Windows.Forms.Panel();
             this.btn_Them = new System.Windows.Forms.Button();
             this.btn_NhapLai = new System.Windows.Forms.Button();
@@ -44,7 +46,7 @@
             this.lbl_Title = new System.Windows.Forms.Label();
             this.panel_Main = new System.Windows.Forms.Panel();
             this.panel_Form = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chart_BooksByCategory = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cbb_TheLoai = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_DonGiaMuon = new System.Windows.Forms.TextBox();
@@ -54,7 +56,7 @@
             this.panel_Header.SuspendLayout();
             this.panel_Main.SuspendLayout();
             this.panel_Form.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_BooksByCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Controls
@@ -236,7 +238,7 @@
             // panel_Form
             // 
             this.panel_Form.BackColor = System.Drawing.Color.White;
-            this.panel_Form.Controls.Add(this.pictureBox1);
+            this.panel_Form.Controls.Add(this.chart_BooksByCategory);
             this.panel_Form.Controls.Add(this.cbb_TheLoai);
             this.panel_Form.Controls.Add(this.label6);
             this.panel_Form.Controls.Add(this.txt_DonGiaMuon);
@@ -258,15 +260,21 @@
             this.panel_Form.Size = new System.Drawing.Size(1617, 863);
             this.panel_Form.TabIndex = 0;
             // 
-            // pictureBox1
+            // chart_BooksByCategory
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(746, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(770, 585);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            chartArea1.Name = "ChartArea1";
+            this.chart_BooksByCategory.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart_BooksByCategory.Legends.Add(legend1);
+            this.chart_BooksByCategory.Location = new System.Drawing.Point(843, 128);
+            this.chart_BooksByCategory.Name = "chart_BooksByCategory";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Số lượng sách";
+            this.chart_BooksByCategory.Series.Add(series1);
+            this.chart_BooksByCategory.Size = new System.Drawing.Size(754, 654);
+            this.chart_BooksByCategory.TabIndex = 14;
+            this.chart_BooksByCategory.Text = "chart_BooksByCategory";
             // 
             // cbb_TheLoai
             // 
@@ -354,7 +362,7 @@
             this.panel_Main.ResumeLayout(false);
             this.panel_Form.ResumeLayout(false);
             this.panel_Form.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_BooksByCategory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -381,6 +389,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_DonGiaMuon;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_BooksByCategory;
     }
 }

@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ThemDocGia));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_SoDienThoai = new System.Windows.Forms.TextBox();
             this.txt_TenDocGia = new System.Windows.Forms.TextBox();
@@ -44,12 +46,12 @@
             this.panel_Main = new System.Windows.Forms.Panel();
             this.panel_Form = new System.Windows.Forms.Panel();
             this.panel_Controls = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chart_DocGiaMoiTheoThang = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel_Header.SuspendLayout();
             this.panel_Main.SuspendLayout();
             this.panel_Form.SuspendLayout();
             this.panel_Controls.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_DocGiaMoiTheoThang)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -224,7 +226,7 @@
             // panel_Form
             // 
             this.panel_Form.BackColor = System.Drawing.Color.White;
-            this.panel_Form.Controls.Add(this.pictureBox1);
+            this.panel_Form.Controls.Add(this.chart_DocGiaMoiTheoThang);
             this.panel_Form.Controls.Add(this.txt_SoDienThoai);
             this.panel_Form.Controls.Add(this.label1);
             this.panel_Form.Controls.Add(this.txt_TenDocGia);
@@ -252,15 +254,22 @@
             this.panel_Controls.TabIndex = 12;
             this.panel_Controls.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Controls_Paint);
             // 
-            // pictureBox1
+            // chart_DocGiaMoiTheoThang
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(528, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(483, 474);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            chartArea1.Name = "ChartArea1";
+            this.chart_DocGiaMoiTheoThang.ChartAreas.Add(chartArea1);
+            this.chart_DocGiaMoiTheoThang.Dock = System.Windows.Forms.DockStyle.Right;
+            legend1.Name = "Legend1";
+            this.chart_DocGiaMoiTheoThang.Legends.Add(legend1);
+            this.chart_DocGiaMoiTheoThang.Location = new System.Drawing.Point(530, 0);
+            this.chart_DocGiaMoiTheoThang.Name = "chart_DocGiaMoiTheoThang";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Số Độc Giả Mới";
+            this.chart_DocGiaMoiTheoThang.Series.Add(series1);
+            this.chart_DocGiaMoiTheoThang.Size = new System.Drawing.Size(638, 330);
+            this.chart_DocGiaMoiTheoThang.TabIndex = 8;
+            this.chart_DocGiaMoiTheoThang.Text = "Độc Giả Mới Theo Tháng";
             // 
             // frm_ThemDocGia
             // 
@@ -283,7 +292,7 @@
             this.panel_Form.ResumeLayout(false);
             this.panel_Form.PerformLayout();
             this.panel_Controls.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_DocGiaMoiTheoThang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,6 +314,6 @@
         private System.Windows.Forms.Panel panel_Main;
         private System.Windows.Forms.Panel panel_Form;
         private System.Windows.Forms.Panel panel_Controls;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_DocGiaMoiTheoThang;
     }
 }
