@@ -203,5 +203,9 @@ namespace QLTV
                 LoadAllData();
         }
 
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            LoadAllData();
+        }
     }
 }

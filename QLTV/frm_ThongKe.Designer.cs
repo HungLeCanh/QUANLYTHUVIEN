@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnl_Header = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbb_Thang = new System.Windows.Forms.ComboBox();
+            this.cbb_Nam = new System.Windows.Forms.ComboBox();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.pnl_Main = new System.Windows.Forms.Panel();
@@ -67,10 +71,6 @@
             this.pnl_StatCard6 = new System.Windows.Forms.Panel();
             this.lbl_PaidInvoices = new System.Windows.Forms.Label();
             this.lbl_PaidInvoicesValue = new System.Windows.Forms.Label();
-            this.cbb_Nam = new System.Windows.Forms.ComboBox();
-            this.cbb_Thang = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnl_Header.SuspendLayout();
             this.pnl_Main.SuspendLayout();
             this.pnl_Charts.SuspendLayout();
@@ -101,6 +101,73 @@
             this.pnl_Header.Size = new System.Drawing.Size(1731, 80);
             this.pnl_Header.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1029, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 23);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Năm:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(875, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Tháng:";
+            // 
+            // cbb_Thang
+            // 
+            this.cbb_Thang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_Thang.FormattingEnabled = true;
+            this.cbb_Thang.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cbb_Thang.Location = new System.Drawing.Point(879, 39);
+            this.cbb_Thang.Name = "cbb_Thang";
+            this.cbb_Thang.Size = new System.Drawing.Size(121, 28);
+            this.cbb_Thang.TabIndex = 8;
+            this.cbb_Thang.SelectedIndexChanged += new System.EventHandler(this.cbb_Thang_SelectedIndexChanged);
+            // 
+            // cbb_Nam
+            // 
+            this.cbb_Nam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_Nam.FormattingEnabled = true;
+            this.cbb_Nam.Items.AddRange(new object[] {
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029",
+            "2030",
+            "2031",
+            "2032",
+            "2033",
+            "2034",
+            "2035"});
+            this.cbb_Nam.Location = new System.Drawing.Point(1033, 39);
+            this.cbb_Nam.Name = "cbb_Nam";
+            this.cbb_Nam.Size = new System.Drawing.Size(121, 28);
+            this.cbb_Nam.TabIndex = 7;
+            this.cbb_Nam.SelectedIndexChanged += new System.EventHandler(this.cbb_Nam_SelectedIndexChanged);
+            // 
             // lbl_Title
             // 
             this.lbl_Title.AutoSize = true;
@@ -125,6 +192,7 @@
             this.btn_Refresh.TabIndex = 6;
             this.btn_Refresh.Text = "Làm mới";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // pnl_Main
             // 
@@ -154,49 +222,49 @@
             // 
             // chart_BooksByCategory
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chart_BooksByCategory.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart_BooksByCategory.Legends.Add(legend10);
+            chartArea1.Name = "ChartArea1";
+            this.chart_BooksByCategory.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart_BooksByCategory.Legends.Add(legend1);
             this.chart_BooksByCategory.Location = new System.Drawing.Point(19, 50);
             this.chart_BooksByCategory.Name = "chart_BooksByCategory";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Số lượng sách";
-            this.chart_BooksByCategory.Series.Add(series10);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Số lượng sách";
+            this.chart_BooksByCategory.Series.Add(series1);
             this.chart_BooksByCategory.Size = new System.Drawing.Size(668, 200);
             this.chart_BooksByCategory.TabIndex = 1;
             this.chart_BooksByCategory.Text = "chart_BooksByCategory";
             // 
             // chart_MonthlyLoans
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chart_MonthlyLoans.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart_MonthlyLoans.Legends.Add(legend11);
+            chartArea2.Name = "ChartArea1";
+            this.chart_MonthlyLoans.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart_MonthlyLoans.Legends.Add(legend2);
             this.chart_MonthlyLoans.Location = new System.Drawing.Point(758, 50);
             this.chart_MonthlyLoans.Name = "chart_MonthlyLoans";
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Số lượt mượn";
-            this.chart_MonthlyLoans.Series.Add(series11);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Số lượt mượn";
+            this.chart_MonthlyLoans.Series.Add(series2);
             this.chart_MonthlyLoans.Size = new System.Drawing.Size(694, 450);
             this.chart_MonthlyLoans.TabIndex = 3;
             this.chart_MonthlyLoans.Text = "chart_MonthlyLoans";
             // 
             // chart_BookStatus
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chart_BookStatus.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart_BookStatus.Legends.Add(legend12);
+            chartArea3.Name = "ChartArea1";
+            this.chart_BookStatus.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart_BookStatus.Legends.Add(legend3);
             this.chart_BookStatus.Location = new System.Drawing.Point(20, 300);
             this.chart_BookStatus.Name = "chart_BookStatus";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series12.Legend = "Legend1";
-            series12.Name = "Trạng thái";
-            this.chart_BookStatus.Series.Add(series12);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Legend = "Legend1";
+            series3.Name = "Trạng thái";
+            this.chart_BookStatus.Series.Add(series3);
             this.chart_BookStatus.Size = new System.Drawing.Size(668, 200);
             this.chart_BookStatus.TabIndex = 5;
             this.chart_BookStatus.Text = "chart_BookStatus";
@@ -445,73 +513,6 @@
             this.lbl_PaidInvoicesValue.Size = new System.Drawing.Size(46, 54);
             this.lbl_PaidInvoicesValue.TabIndex = 1;
             this.lbl_PaidInvoicesValue.Text = "0";
-            // 
-            // cbb_Nam
-            // 
-            this.cbb_Nam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_Nam.FormattingEnabled = true;
-            this.cbb_Nam.Items.AddRange(new object[] {
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029",
-            "2030",
-            "2031",
-            "2032",
-            "2033",
-            "2034",
-            "2035"});
-            this.cbb_Nam.Location = new System.Drawing.Point(1033, 39);
-            this.cbb_Nam.Name = "cbb_Nam";
-            this.cbb_Nam.Size = new System.Drawing.Size(121, 28);
-            this.cbb_Nam.TabIndex = 7;
-            this.cbb_Nam.SelectedIndexChanged += new System.EventHandler(this.cbb_Nam_SelectedIndexChanged);
-            // 
-            // cbb_Thang
-            // 
-            this.cbb_Thang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_Thang.FormattingEnabled = true;
-            this.cbb_Thang.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.cbb_Thang.Location = new System.Drawing.Point(879, 39);
-            this.cbb_Thang.Name = "cbb_Thang";
-            this.cbb_Thang.Size = new System.Drawing.Size(121, 28);
-            this.cbb_Thang.TabIndex = 8;
-            this.cbb_Thang.SelectedIndexChanged += new System.EventHandler(this.cbb_Thang_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(875, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tháng:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1029, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 23);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Năm:";
             // 
             // frm_ThongKe
             // 
